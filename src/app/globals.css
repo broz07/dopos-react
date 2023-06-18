@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-button{
+    @apply relative hover:text-gray-500 transition-all duration-200 inline-flex text-center items-center justify-center font-semibold h-full px-1.5 min-w-[4rem] mx-0.5;
+}
