@@ -41,7 +41,7 @@ const Header:React.FC<Props> = ({currentPage, setCurrentPage}) => {
                 alt="Dopos Logo" 
                 width={40} 
                 height={40} 
-                className="desktop:w-32 laptop:w-32 tablet:w-32 w-20 hover:mix-blend-exclusion hover:brightness-100 hover:invert-100" />
+                className="desktop:w-32 laptop:w-32 tablet:w-32 w-20" />
           <h1 className="text-2xl font-bold hidden">DOPOS HK s.r.o.</h1>
         </div>
         <Menu currentPage={currentPage} setCurrentPage={setCurrentPage}/>
