@@ -5,3 +5,32 @@
 .menu-button{
     @apply relative hover:text-gray-500 transition-all duration-200 inline-flex text-center items-center justify-center font-semibold h-full px-1.5 min-w-[4rem] mx-0.5;
 }
+
+.bounce-to-bottom {
+    @apply shadow-[0_0_1px_rgba(0,0,0,0)] relative transition-[color] duration-[0.5s] before:content-[""] before:absolute before:z-[-1] before:origin-[50%_0] before:transition-transform before:duration-[0.5s] before:ease-[ease-out] before:scale-y-0 before:inset-0;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.5s;
+}
+.bounce-to-bottom:before {
+    background: #009ee0;
+    -webkit-transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+}
+.bounce-to-bottom:hover,
+.bounce-to-bottom:focus,
+.bounce-to-bottom:active {
+    @apply text-[#f8f8f8];
+}
+.bounce-to-bottom:hover:before,
+.bounce-to-bottom:focus:before,
+.bounce-to-bottom:active:before {
+    @apply ease-[cubic-bezier(0.52,1.64,0.37,0.66)] scale-y-100;
+    -webkit-transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+  
