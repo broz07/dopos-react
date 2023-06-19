@@ -32,7 +32,7 @@ const Header:React.FC<Props> = ({currentPage, setCurrentPage}) => {
     <header
       className={`fixed left-0 right-0 top-0 z-50 h-16 ${
         scrolled ?  'bg-gray-100 text-gray-900' : 'bg-transparent text-gray-900'
-      } transition-all duration-300 ease-in-out`}
+      } transition-all duration-300 ease-in-out select-none`}
     >
       <div className="px-8 flex items-center justify-between h-16">
         <div className="flex items-center">

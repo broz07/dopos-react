@@ -56,7 +56,7 @@ const PageLayout = () => {
     <div className="absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <main className="absolute top-0 left-0 right-0 min-h-screen flex-col">
-        <div className="h-[38rem] scrollama-step" data-step="home">
+        <div className="h-[38rem] scrollama-step select-none" data-step="home">
           {/* <ImageCarousel /> */}          
           <Image 
             src="/assets/img3.jpeg" 
