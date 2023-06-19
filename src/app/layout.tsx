@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="cs" className={`scroll-smooth`}>
-      <body className={`${inter.className} w-full min-h-screen`}>{children}</body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   )
 }

@@ -4,9 +4,13 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Menu from './Menu';
 
-const Header = () => {
+interface Props {
+  currentPage: string;
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Header:React.FC<Props> = ({currentPage, setCurrentPage}) => {
   const [scrolled, setScrolled] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 ${
+      className={`fixed left-0 right-0 top-0 z-50 h-16 ${
         scrolled ?  'bg-gray-100 text-gray-900' : 'bg-transparent text-gray-900'
       } transition-all duration-300 ease-in-out`}
     >
@@ -40,7 +44,7 @@ const Header = () => {
                 className="desktop:w-32 laptop:w-32 tablet:w-32 w-20 hover:mix-blend-exclusion hover:brightness-100 hover:invert-100" />
           <h1 className="text-2xl font-bold hidden">DOPOS HK s.r.o.</h1>
         </div>
-        <Menu />
+        <Menu currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         <ul className={`desktop:hidden laptop:hidden flex`}>
           TODO: MOBILNI MENU
         </ul>
