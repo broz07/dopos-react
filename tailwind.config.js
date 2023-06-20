@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       colors: {
         'dopos-blue': '#009ee0',
-        'dopos-red': '#E30613',
+        'dopos-red': '#e30016',
+        'dopos-black': '#1b1918',
       }
     },
     screens: {
