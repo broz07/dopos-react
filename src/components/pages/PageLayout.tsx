@@ -1,5 +1,5 @@
 "use client"
-import Header from '@dopos/components/Header';
+import Header from '@dopos/components/ui/Header';
 // import ImageCarousel from '@dopos/components/ImageCarousel';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -8,6 +8,7 @@ import ServiceSection from '@dopos/components/sections/ServiceSection';
 import ReferenceSection from '@dopos/components/sections/ReferenceSection';
 import ContactSection from '@dopos/components/sections/ContactSection';
 import scrollama from "scrollama";
+import Footer from '../ui/Footer';
 
 
 
@@ -55,7 +56,7 @@ const PageLayout = () => {
     return (
     <div className="absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage}/>
-      <main className="absolute top-0 left-0 right-0 min-h-screen flex-col">
+      <main className="sticky top-0 left-0 right-0 h-auto flex-col">
         <div className="h-[38rem] scrollama-step select-none" data-step="home">
           {/* <ImageCarousel /> */}          
           <Image 
@@ -71,6 +72,7 @@ const PageLayout = () => {
         <ReferenceSection />
         <ContactSection />
       </main>
+      <Footer />
     </div>
     )
 }

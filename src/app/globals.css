@@ -37,4 +37,14 @@
 .current-page{
     @apply bg-dopos-blue text-[#f8f8f8];
 }
+
+body::-webkit-scrollbar {
+    @apply w-0 bg-transparent;
+}
+  
+  /* Hide the scrollbar for Firefox */
+body {
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
   
