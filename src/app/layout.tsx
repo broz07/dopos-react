@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="cs" className={`scroll-smooth box-content`}>
-      <body className={`${inter.className} flex-col`}>{children}</body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   )
 }

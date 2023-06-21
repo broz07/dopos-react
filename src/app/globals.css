@@ -44,7 +44,22 @@ body::-webkit-scrollbar {
   
   /* Hide the scrollbar for Firefox */
 body {
+    /* overflow-y: auto; */
+    @apply absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col;
+    -ms-overflow-style: none;
+    scrollbar-width: none !important;
+}
+
+html {
     scrollbar-width: none;
+}
+
+/* .page {
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
-  
+
+.page::-webkit-scrollbar {
+    @apply w-0 bg-transparent;
+} */

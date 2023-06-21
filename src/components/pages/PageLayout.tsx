@@ -54,7 +54,8 @@ const PageLayout = () => {
     }, []);
 
     return (
-    <div className="absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col">
+    // <div className="absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col page">
+    <>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       <main className="sticky top-0 left-0 right-0 h-auto flex-col">
         <div className="h-[38rem] scrollama-step select-none" data-step="home">
@@ -73,7 +74,8 @@ const PageLayout = () => {
         <ContactSection />
       </main>
       <Footer />
-    </div>
+    {/* </div> */}
+    </>
     )
 }
 
