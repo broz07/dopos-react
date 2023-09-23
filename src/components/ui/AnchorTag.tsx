@@ -1,11 +1,11 @@
-"use client"
+'use client';
 
 interface Props {
-    section: string
+	section: string;
 }
 
-const AnchorTag:React.FC<Props> = ({section}) => {
-    return <div id={section} className="absolute top-[-4rem] invisible"/>
-}
+const AnchorTag: React.FC<Props> = ({ section }) => {
+	return <div id={section} className="absolute top-[-4rem] invisible" />;
+};
 
-export default AnchorTag
+export default AnchorTag;
