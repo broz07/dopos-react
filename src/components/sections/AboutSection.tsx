@@ -3,6 +3,7 @@ import AnchorTag from '../ui/AnchorTag';
 import CountUp from 'react-countup';
 import Image from 'next/image';
 import { usePageContext } from '@dopos/contexts/PageContext';
+import Count from '../ui/Count';
 const AboutSection = () => {
 	const { currentPage, animationPlayed, setAnimationPlayed } = usePageContext();
 
@@ -15,53 +16,33 @@ const AboutSection = () => {
 			<AnchorTag section="o-nas" />
 			<div className={`flex flex-row justify-start items-start w-full h-full`}>
 				<div
-					className={`flex flex-col justify-center items-center w-1/2 h-full gap-4`}
+					className={`flex flex-col justify-between items-center w-1/2 h-full gap-2 pt-16 pb-8 pr-6`}
 				>
-					<h2 className={`text-6xl w-full text-center`}>
+					<h2 className={`text-6xl w-full text-center text-dopos-blue`}>
 						S námi se nespálíte!
 					</h2>
-					<div>
-						<ul>
-							<li>
-								Našim cílem je kontinuální poskytování kvalitních služeb
-								zákazníkům, včetně komplexního servisu.
-							</li>
-							<li>
-								Na základě projektové dokumentace nebo podrobné prohlídky stavby
-								jsme schopni navrhnout ekonomicky optimální řešení
-								protipožárních konstrukcí.
-							</li>
-							<li>Na konkrétní zadání zpracujeme zdarma cenovou nabídku.</li>
-							<li>
-								Součástí našich služeb je také konzultace s projektantem požárně
-								bezpečnostního řešení včetně odsouhlasení navrženého postupu s
-								dotyčnou stavební prevencí Hasičského záchranného sboru.
-							</li>
-							<li>
-								Garantujeme bezproblémovou kolaudaci v oblasti našich dodávek.
-							</li>
-							<li>
-								Pro stávající zkolaudované objekty v provozu zajišťujeme
-								kontrolu požárně bezpečnostních zařízení podle vyhlášky
-								Ministerstva vnitra č. 246 z 21.6.2001.
-							</li>
-						</ul>
-					</div>
+                    <div
+                        className={`text-justify text-lg w-full text-dopos-black`}
+                    >
+                        Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům, včetně komplexního servisu.
+                        Na základě projektové dokumentace nebo podrobné prohlídky stavby jsme schopni navrhnout ekonomicky optimální řešení protipožárních konstrukcí.
+                        Na konkrétní zadání zpracujeme zdarma cenovou nabídku.
+                        Součástí našich služeb je také konzultace s projektantem požárně bezpečnostního řešení včetně odsouhlasení navrženého postupu s dotyčnou stavební prevencí Hasičského záchranného sboru.
+                        Garantujeme bezproblémovou kolaudaci v oblasti našich dodávek.
+                        Pro stávající zkolaudované objekty v provozu zajišťujeme kontrolu požárně bezpečnostních zařízení podle vyhlášky Ministerstva vnitra č. 246 z 21.6.2001.
+                    </div>
 					<div
-						className={`flex flex-row justify-center items-center w-full h-24 gap-4`}
+						className={`flex flex-row justify-between items-center w-full h-24 gap-4`}
 					>
-						{currentPage === 'o-nas' && !animationPlayed && (
-							<CountUp
-								className={`text-grey-900 text-6xl h-full w-1/3`}
-								end={2007}
-								duration={3}
-								separator=" "
-								onEnd={() => setAnimationPlayed(true)}
-							/>
-						)}
-						{currentPage === 'o-nas' && animationPlayed && <span>2007</span>}
-						{currentPage !== 'o-nas' && animationPlayed && <span>2007</span>}
-						{currentPage !== 'o-nas' && !animationPlayed && <span>0</span>}
+						<Count text="rok založení" end={2007} page="o-nas" separator=" " />
+						<Count
+							text="staveb"
+							end={20}
+							page="o-nas"
+							separator=","
+							prefix="Přes "
+						/>
+						<Count text="let zkušeností" end={30} page="o-nas" prefix="" />
 					</div>
 				</div>
 				<div

@@ -11,7 +11,7 @@ const ContactCol = ({ title, text, image, alt }: Props) => {
 	return (
 		<div className={`flex justify-start content-center h-16 w-96 px-4`}>
 			<div className={`flex flex-col justify-center content-center`}>
-				<Image className={`h-8`} src={image} alt={alt} width={40} height={40} />
+				<Image className={`h-8 w-8`} src={image} alt={alt} width={40} height={40} />
 			</div>
 			<div
 				className={`flex flex-col justify-center content-center ml-2 whitespace-nowrap`}
