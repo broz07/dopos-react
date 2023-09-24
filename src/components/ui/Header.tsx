@@ -46,9 +46,9 @@ const Header: React.FC<Props> = ({ currentPage, setCurrentPage }) => {
 					<h1 className="text-2xl font-bold hidden">DOPOS HK s.r.o.</h1>
 				</div>
 				<Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
-				<ul className={`desktop:hidden laptop:hidden flex`}>
+				{/* <ul className={`desktop:hidden laptop:hidden flex`}>
 					TODO: MOBILNI MENU
-				</ul>
+				</ul> */}
 			</div>
 		</header>
 	);

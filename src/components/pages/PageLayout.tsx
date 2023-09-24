@@ -10,9 +10,9 @@ import ContactSection from '@dopos/components/sections/ContactSection';
 import scrollama from 'scrollama';
 import Footer from '../ui/Footer';
 import {
-	PageContextProvider,
 	usePageContext,
 } from '@dopos/contexts/PageContext';
+import MobileMenu from '../ui/MobileMenu';
 
 const PageLayout: React.FC = () => {
 	const { currentPage, setCurrentPage, setAnimationPlayed } = usePageContext();
@@ -79,6 +79,7 @@ const PageLayout: React.FC = () => {
 				<ContactSection />
 			</main>
 			<Footer />
+			<MobileMenu />
 			{/* </div> */}
 		</>
 	);

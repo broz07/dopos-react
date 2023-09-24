@@ -3,7 +3,7 @@ import ContactCol from './ContactCol';
 const Footer = () => {
 	return (
 		<footer className={`desktop:h-auto py-4 bg-gray-900 text-white`}>
-			<div className={`flex desktop:flex-row laptop:flex-row tablet:flex-col mobile: flex-col justify-between px-20 content-center`}>
+			<div className={`flex desktop:flex-row laptop:flex-row flex-col justify-between desktop:px-20 laptop:px-16 content-center`}>
 				<ContactCol
 					image="/assets/icons/location-dot-solid.svg"
 					alt="location"
