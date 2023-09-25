@@ -2,7 +2,7 @@ import { Parallax } from 'react-parallax';
 import Count from '../ui/Count';
 
 const CountupSection = () => {
-    const countUpClass = "flex flex-col justify-center items-center bg-white bg-opacity-60 rounded-xl shadow-xl p-8 w-96"
+    const countUpClass = "flex flex-col justify-center items-center bg-white bg-opacity-80 rounded-xl shadow-xl p-8 w-96"
 
 	return (
 		<div
