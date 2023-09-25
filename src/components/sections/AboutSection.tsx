@@ -9,9 +9,9 @@ const AboutSection = () => {
 			style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="o-nas" />
-			<div className={`flex flex-row justify-start items-start w-full h-full`}>
-
-			</div>
+			<div
+				className={`flex flex-row justify-start items-start w-full h-full`}
+			></div>
 		</section>
 	);
 };

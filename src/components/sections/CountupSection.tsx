@@ -30,11 +30,7 @@ const CountupSection = () => {
 					prefix="Přes "
 					className={countUpClass}
 				/>
-				<Count
-					text="let zkušeností"
-					end={30}
-					className={countUpClass}
-				/>
+				<Count text="let zkušeností" end={30} className={countUpClass} />
 			</Parallax>
 		</div>
 	);
