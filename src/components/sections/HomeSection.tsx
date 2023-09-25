@@ -15,13 +15,13 @@ const HomeSection = () => {
 				height={1080}
 				className="w-full h-full object-cover opacity-80"
 			/> */}
-            <video 
-                src="/assets/video.mp4" 
-                autoPlay
-                loop
-                muted
+			<video
+				src="/assets/video.mp4"
+				autoPlay
+				loop
+				muted
 				className="w-full h-full z-0 object-cover opacity-70"
-            />
+			/>
 		</div>
 	);
 };

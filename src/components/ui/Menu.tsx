@@ -14,7 +14,7 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 
 	return (
 		<nav className={`desktop:block laptop:block hidden h-full`}>
-			<ul className="desktop:flex laptop:flex h-full hidden">
+			<ul className="desktop:flex laptop:flex h-full hidden uppercase tracking-wide">
 				<a
 					href="#"
 					onClick={() => setPage('home')}

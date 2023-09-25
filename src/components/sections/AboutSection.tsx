@@ -1,12 +1,7 @@
-'use client';
 import AnchorTag from '../ui/AnchorTag';
-import CountUp from 'react-countup';
 import Image from 'next/image';
-import { usePageContext } from '@dopos/contexts/PageContext';
 import Count from '../ui/Count';
 const AboutSection = () => {
-	const { currentPage, animationPlayed, setAnimationPlayed } = usePageContext();
-
 	return (
 		<section
 			className={`grow relative bg-gray-100 text-dopos-black font-bold scrollama-step p-6 flex flex-col justify-start items-center`}

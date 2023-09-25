@@ -1,7 +1,10 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Barlow_Condensed } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const barlow = Barlow_Condensed({
+	subsets: ['latin'],
+	weight: ['300', '400', '500', '600', '700', '800', '900'],
+});
 
 export const metadata = {
 	title: 'DOPOS HK',
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="cs" className={`scroll-smooth box-content`}>
-			<body className={`${inter.className}`}>{children}</body>
+			<body className={`${barlow.className}`}>{children}</body>
 		</html>
 	);
 }
