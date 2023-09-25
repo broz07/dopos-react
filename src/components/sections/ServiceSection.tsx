@@ -10,13 +10,6 @@ const ServiceSection = () => {
 			style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="sluzby" />
-			{/* <Parallax
-				className="h-full flex flex-col justify-center items-center text-white"
-				bgImage="/assets/img7.webp"
-			>
-				Služby
-			</Parallax> */}
-
 			<div
 				className={`flex flex-col justify-center items-center w-full h-full`}
 			>
