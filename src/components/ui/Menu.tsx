@@ -43,13 +43,13 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					O nás
 				</a>
 				<a
-					href="#reference"
-					onClick={() => setPage('reference')}
+					href="#portfolio"
+					onClick={() => setPage('portfolio')}
 					className={`menu-button bounce-to-bottom ${
-						currentPage === 'reference' ? 'current-page' : ''
+						currentPage === 'portfolio' ? 'current-page' : ''
 					}`}
 				>
-					Reference
+					Portfolio
 				</a>
 				<a
 					href="#kontakt"

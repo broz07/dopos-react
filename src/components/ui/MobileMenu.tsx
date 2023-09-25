@@ -15,7 +15,7 @@ const MenuValues: string[] = [
 	'home',
 	'sluzby',
 	'o-nas',
-	'reference',
+	'portfolio',
 	'kontakt',
 ];
 
@@ -47,9 +47,9 @@ const MobileMenu: React.FC = () => {
 						href="#o-nas"
 					/>
 					<BottomNavigationAction
-						label="Reference"
+						label="Portfolio"
 						icon={<CoPresentIcon />}
-						href="#reference"
+						href="#portfolio"
 					/>
 					<BottomNavigationAction
 						label="Kontakt"

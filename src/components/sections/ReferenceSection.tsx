@@ -4,11 +4,11 @@ const ReferenceSection = () => {
 	return (
 		<section
 			className={`grow relative bg-green-600 scrollama-step`}
-			data-step="reference"
+			data-step="portfolio"
 			style={{ height: 'calc(100vh - 4rem)' }}
 		>
-			<AnchorTag section="reference" />
-			Reference
+			<AnchorTag section="portfolio" />
+			Portfolio
 		</section>
 	);
 };

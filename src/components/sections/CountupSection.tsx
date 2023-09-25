@@ -24,8 +24,8 @@ const CountupSection = () => {
 					className={countUpClass}
 				/>
 				<Count
-					text="staveb"
-					end={20}
+					text="realizovaných projektů"
+					end={100}
 					separator=","
 					prefix="Přes "
 					className={countUpClass}
@@ -33,7 +33,6 @@ const CountupSection = () => {
 				<Count
 					text="let zkušeností"
 					end={30}
-					prefix=""
 					className={countUpClass}
 				/>
 			</Parallax>
