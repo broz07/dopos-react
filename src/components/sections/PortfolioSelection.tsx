@@ -81,7 +81,18 @@ const PortfolioSelection = () => {
 				</div>
 				<div className="w-full h-1/6 flex justify-center items-center gap-2 mt-4">
 					<Button
-						className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+						sx={{
+							minWidth: "0px !important",
+							minHeight: "0px !important",
+							width: "3rem !important",
+							height: "3rem !important",
+							backgroundColor: "rgb(27,25,24) !important",
+							color: "white",
+							":hover": {
+								backgroundColor: "rgb(27,25,24) !important"
+							}
+						}}
 						variant="contained"
 						size="small"
 						color="inherit"
@@ -93,7 +104,18 @@ const PortfolioSelection = () => {
 						<ArrowBackIcon />
 					</Button>
 					<Button
-						className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+						sx={{
+							minWidth: "0px !important",
+							minHeight: "0px !important",
+							width: "3rem !important",
+							height: "3rem !important",
+							backgroundColor: "rgb(27,25,24) !important",
+							color: "white",
+							":hover": {
+								backgroundColor: "rgb(27,25,24) !important"
+							}
+						}}
 						variant="contained"
 						size="small"
 						color="inherit"

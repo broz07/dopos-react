@@ -20,7 +20,7 @@ const CountupSection = () => {
 				<Count
 					text="rok založení"
 					end={2007}
-					separator=" "
+					separator=""
 					className={countUpClass}
 				/>
 				<Count
