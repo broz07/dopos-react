@@ -12,37 +12,54 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import { usePageContext } from '@dopos/contexts/PageContext';
 
 const MenuValues: string[] = [
-  'home',
-  'o-nas',
-  'sluzby',
-  'reference',
-  'kontakt',
+	'home',
+	'sluzby',
+	'o-nas',
+	'reference',
+	'kontakt',
 ];
 
 const MobileMenu: React.FC = () => {
-  const {currentPage, setCurrentPage} = usePageContext();
+	const { currentPage, setCurrentPage } = usePageContext();
 
-  return (
-    <Box 
-        className={`desktop:hidden laptop:hidden pb-14`}
-    >
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-        <BottomNavigation
-          showLabels
-          value={MenuValues.indexOf(currentPage)}
-          onChange={(event, newValue) => {
-            setCurrentPage(MenuValues[newValue]);
-          }}
-        >
-          <BottomNavigationAction label="Domů" icon={<HomeIcon />} href='#'/>
-          <BottomNavigationAction label="O nás" icon={<InfoIcon />} href='#o-nas'/>
-          <BottomNavigationAction label="Služby" icon={<HomeRepairServiceIcon />} href='#sluzby'/>
-          <BottomNavigationAction label="Reference" icon={<CoPresentIcon />} href='#reference'/>
-          <BottomNavigationAction label="Kontakt" icon={<PhoneIcon />} href='#kontakt'/>
-        </BottomNavigation>
-      </Paper>
-    </Box>
-  );
-}
+	return (
+		<Box className={`desktop:hidden laptop:hidden pb-14`}>
+			<Paper
+				sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+				elevation={3}
+			>
+				<BottomNavigation
+					showLabels
+					value={MenuValues.indexOf(currentPage)}
+					onChange={(event, newValue) => {
+						setCurrentPage(MenuValues[newValue]);
+					}}
+				>
+					<BottomNavigationAction label="Domů" icon={<HomeIcon />} href="#" />
+					<BottomNavigationAction
+						label="Služby"
+						icon={<HomeRepairServiceIcon />}
+						href="#sluzby"
+					/>
+					<BottomNavigationAction
+						label="O nás"
+						icon={<InfoIcon />}
+						href="#o-nas"
+					/>
+					<BottomNavigationAction
+						label="Reference"
+						icon={<CoPresentIcon />}
+						href="#reference"
+					/>
+					<BottomNavigationAction
+						label="Kontakt"
+						icon={<PhoneIcon />}
+						href="#kontakt"
+					/>
+				</BottomNavigation>
+			</Paper>
+		</Box>
+	);
+};
 
 export default MobileMenu;

@@ -3,14 +3,16 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Menu from './Menu';
+import { usePageContext } from '@dopos/contexts/PageContext';
 
 interface Props {
-	currentPage: string;
-	setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+	// currentPage: string;
+	// setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Header: React.FC<Props> = ({ currentPage, setCurrentPage }) => {
+const Header: React.FC<Props> = () => {
 	const [scrolled, setScrolled] = useState(false);
+	const { currentPage, setCurrentPage } = usePageContext();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -30,11 +32,13 @@ const Header: React.FC<Props> = ({ currentPage, setCurrentPage }) => {
 
 	return (
 		<header
-			className={`fixed left-0 right-0 top-0 z-50 h-16 ${
-				scrolled ? 'bg-gray-100 text-gray-900' : 'bg-transparent text-gray-900'
+			className={`fixed left-0 right-0 top-0 z-50 ${
+				scrolled
+					? 'bg-gray-100 text-gray-900 h-16'
+					: 'bg-transparent text-gray-900 h-20'
 			} transition-all duration-300 ease-in-out select-none`}
 		>
-			<div className="px-8 flex items-center justify-between h-16">
+			<div className="px-8 flex items-center justify-between h-full">
 				<div className="flex items-center desktop:w-32 laptop:w-32 tablet:w-32 w-20">
 					<Image
 						src="/assets/logo2.svg"

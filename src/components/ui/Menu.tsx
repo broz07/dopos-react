@@ -25,15 +25,6 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					Domů
 				</a>
 				<a
-					href="#o-nas"
-					onClick={() => setPage('o-nas')}
-					className={`menu-button bounce-to-bottom ${
-						currentPage === 'o-nas' ? 'current-page' : ''
-					}`}
-				>
-					O nás
-				</a>
-				<a
 					href="#sluzby"
 					onClick={() => setPage('sluzby')}
 					className={`menu-button bounce-to-bottom ${
@@ -41,6 +32,15 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					}`}
 				>
 					Naše služby
+				</a>
+				<a
+					href="#o-nas"
+					onClick={() => setPage('o-nas')}
+					className={`menu-button bounce-to-bottom ${
+						currentPage === 'o-nas' ? 'current-page' : ''
+					}`}
+				>
+					O nás
 				</a>
 				<a
 					href="#reference"

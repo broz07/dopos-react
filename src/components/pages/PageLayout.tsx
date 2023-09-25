@@ -1,7 +1,6 @@
 'use client';
 import Header from '@dopos/components/ui/Header';
 // import ImageCarousel from '@dopos/components/ImageCarousel';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import AboutSection from '@dopos/components/sections/AboutSection';
 import ServiceSection from '@dopos/components/sections/ServiceSection';
@@ -9,13 +8,12 @@ import ReferenceSection from '@dopos/components/sections/ReferenceSection';
 import ContactSection from '@dopos/components/sections/ContactSection';
 import scrollama from 'scrollama';
 import Footer from '../ui/Footer';
-import {
-	usePageContext,
-} from '@dopos/contexts/PageContext';
+import { usePageContext } from '@dopos/contexts/PageContext';
 import MobileMenu from '../ui/MobileMenu';
+import HomeSection from '../sections/HomeSection';
 
 const PageLayout: React.FC = () => {
-	const { currentPage, setCurrentPage, setAnimationPlayed } = usePageContext();
+	const { setCurrentPage, setAnimationPlayed } = usePageContext();
 
 	useEffect(() => {
 		// Initialize Scrollama
@@ -56,31 +54,17 @@ const PageLayout: React.FC = () => {
 	}, [setAnimationPlayed, setCurrentPage]);
 
 	return (
-		// <div className="absolute top-0 left-0 right-0 bottom-0 min-h-screen flex flex-col page">
 		<>
-			<Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+			<Header />
 			<main className="sticky top-0 left-0 right-0 h-auto flex-col">
-				<div
-					className="h-[38rem] scrollama-step select-none bg-white"
-					data-step="home"
-				>
-					{/* <ImageCarousel /> */}
-					<Image
-						src="/assets/img3.jpeg"
-						alt="Sample Image"
-						width={1920}
-						height={1080}
-						className="w-full h-full object-cover opacity-80"
-					/>
-				</div>
-				<AboutSection />
+				<HomeSection />
 				<ServiceSection />
+				<AboutSection />
 				<ReferenceSection />
 				<ContactSection />
 			</main>
 			<Footer />
 			<MobileMenu />
-			{/* </div> */}
 		</>
 	);
 };

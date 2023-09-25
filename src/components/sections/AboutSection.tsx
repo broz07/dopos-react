@@ -21,16 +21,19 @@ const AboutSection = () => {
 					<h2 className={`text-6xl w-full text-center text-dopos-blue`}>
 						S námi se nespálíte!
 					</h2>
-                    <div
-                        className={`text-justify text-lg w-full text-dopos-black`}
-                    >
-                        Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům, včetně komplexního servisu.
-                        Na základě projektové dokumentace nebo podrobné prohlídky stavby jsme schopni navrhnout ekonomicky optimální řešení protipožárních konstrukcí.
-                        Na konkrétní zadání zpracujeme zdarma cenovou nabídku.
-                        Součástí našich služeb je také konzultace s projektantem požárně bezpečnostního řešení včetně odsouhlasení navrženého postupu s dotyčnou stavební prevencí Hasičského záchranného sboru.
-                        Garantujeme bezproblémovou kolaudaci v oblasti našich dodávek.
-                        Pro stávající zkolaudované objekty v provozu zajišťujeme kontrolu požárně bezpečnostních zařízení podle vyhlášky Ministerstva vnitra č. 246 z 21.6.2001.
-                    </div>
+					<div className={`text-justify text-lg w-full text-dopos-black`}>
+						Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům,
+						včetně komplexního servisu. Na základě projektové dokumentace nebo
+						podrobné prohlídky stavby jsme schopni navrhnout ekonomicky
+						optimální řešení protipožárních konstrukcí. Na konkrétní zadání
+						zpracujeme zdarma cenovou nabídku. Součástí našich služeb je také
+						konzultace s projektantem požárně bezpečnostního řešení včetně
+						odsouhlasení navrženého postupu s dotyčnou stavební prevencí
+						Hasičského záchranného sboru. Garantujeme bezproblémovou kolaudaci v
+						oblasti našich dodávek. Pro stávající zkolaudované objekty v provozu
+						zajišťujeme kontrolu požárně bezpečnostních zařízení podle vyhlášky
+						Ministerstva vnitra č. 246 z 21.6.2001.
+					</div>
 					<div
 						className={`flex flex-row justify-between items-center w-full h-24 gap-4`}
 					>
