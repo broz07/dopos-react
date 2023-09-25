@@ -6,21 +6,22 @@ import CountUp from 'react-countup';
 interface Props {
 	text: string;
 	end: number;
-	page: string;
 	separator?: string;
 	prefix?: string;
 	suffix?: string;
+	className?: string;
 }
 
 const Count: React.FC<Props> = ({
 	text,
 	end,
-	page,
 	separator = '',
 	prefix,
 	suffix,
+	className,
 }) => {
-	const { animationPlayed, currentPage, setAnimationPlayed } = usePageContext();
+	const { animationPlayed, animationTriggered, setAnimationPlayed } =
+		usePageContext();
 
 	const classDefinition: string = `text-grey-900 text-4xl w-full text-center`;
 
@@ -30,9 +31,13 @@ const Count: React.FC<Props> = ({
 
 	return (
 		<div
-			className={`flex flex-col justify-center items-center h-full w-full bg-dopos-red text-gray-100 p-2 rounded-lg`}
+			className={
+				className
+					? className
+					: `flex flex-col justify-center items-center h-full w-full bg-dopos-red text-gray-100 p-2 rounded-lg`
+			}
 		>
-			{currentPage === page && !animationPlayed && (
+			{animationTriggered && !animationPlayed && (
 				<CountUp
 					className={classDefinition}
 					end={end}
@@ -40,25 +45,25 @@ const Count: React.FC<Props> = ({
 					separator={separator}
 					prefix={prefix || ''}
 					suffix={suffix || ''}
-					delay={0.25}
+					// delay={0.50}
 					onEnd={() => setAnimationPlayed(true)}
 				/>
 			)}
-			{currentPage === page && animationPlayed && (
+			{animationTriggered && animationPlayed && (
 				<span className={classDefinition}>
 					{prefix}
 					{separateNumber(end)}
 					{suffix}
 				</span>
 			)}
-			{currentPage !== page && animationPlayed && (
+			{!animationTriggered && animationPlayed && (
 				<span className={classDefinition}>
 					{prefix}
 					{separateNumber(end)}
 					{suffix}
 				</span>
 			)}
-			{currentPage !== page && !animationPlayed && (
+			{!animationTriggered && !animationPlayed && (
 				<span className={classDefinition}>
 					{prefix}0{suffix}
 				</span>

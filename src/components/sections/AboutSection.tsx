@@ -29,19 +29,6 @@ const AboutSection = () => {
 						zajišťujeme kontrolu požárně bezpečnostních zařízení podle vyhlášky
 						Ministerstva vnitra č. 246 z 21.6.2001.
 					</div>
-					<div
-						className={`flex flex-row justify-between items-center w-full h-24 gap-4`}
-					>
-						<Count text="rok založení" end={2007} page="o-nas" separator=" " />
-						<Count
-							text="staveb"
-							end={20}
-							page="o-nas"
-							separator=","
-							prefix="Přes "
-						/>
-						<Count text="let zkušeností" end={30} page="o-nas" prefix="" />
-					</div>
 				</div>
 				<div
 					className={`flex flex-col justify-center items-center w-1/2 h-full rounded-lg bg-black`}

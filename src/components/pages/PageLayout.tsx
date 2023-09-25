@@ -13,9 +13,11 @@ import MobileMenu from '../ui/MobileMenu';
 import HomeSection from '../sections/HomeSection';
 import { Parallax } from 'react-parallax';
 import ParallaxSection from '../sections/ParallaxSection';
+import CountupSection from '../sections/CountupSection';
 
 const PageLayout: React.FC = () => {
-	const { setCurrentPage, setAnimationPlayed } = usePageContext();
+	const { setCurrentPage, setAnimationPlayed, setAnimationTriggered } =
+		usePageContext();
 
 	useEffect(() => {
 		// Initialize Scrollama
@@ -31,13 +33,18 @@ const PageLayout: React.FC = () => {
 		scroller
 			.setup({
 				step: '.scrollama-step', // CSS class for the steps
-				offset: 0.5, // Trigger the step
+				offset: 0.9, // Trigger the step
 			})
 			.onStepEnter((response: any) => {
 				// Handle step enter event
 				const { element } = response;
 				const step = element.getAttribute('data-step');
-				setCurrentPage(step);
+
+				if (step !== 'countup') {
+					setCurrentPage(step);
+				} else {
+					setAnimationTriggered(true);
+				}
 				// console.log('Entered step:', element);
 			})
 			.onStepExit((response: any) => {
@@ -53,7 +60,7 @@ const PageLayout: React.FC = () => {
 		return () => {
 			scroller.disable();
 		};
-	}, [setAnimationPlayed, setCurrentPage]);
+	}, [setAnimationPlayed, setAnimationTriggered, setCurrentPage]);
 
 	return (
 		<>
@@ -63,6 +70,7 @@ const PageLayout: React.FC = () => {
 				<ServiceSection />
 				<ParallaxSection />
 				<AboutSection />
+				<CountupSection />
 				<ReferenceSection />
 				<ContactSection />
 			</main>
