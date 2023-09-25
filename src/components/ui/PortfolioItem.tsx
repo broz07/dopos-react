@@ -61,7 +61,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 							height={1080}
 							className="w-full h-full"
 							draggable="false"
-                            style={{objectFit: 'cover'}}
+							style={{ objectFit: 'cover' }}
 							key={i}
 						/>
 					))}

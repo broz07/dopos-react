@@ -11,10 +11,14 @@ import PortfolioItem from '../ui/PortfolioItem';
 const PortfolioSelection = () => {
 	const [index, setIndex] = useState(0);
 
-	const brodImages = [0,1,2,3,4,5].map((item) => `/assets/brod/${item}.jpg`);
-	const harfaImages = [0,1].map((item) => `/assets/harfa/${item}.jpg`);
-	const heralecImages = [0,1,2,3,4,5].map((item) => `/assets/heralec/${item}.jpg`);
-	const stukenImages = [0,1,2].map((item) => `/assets/stuken/${item}.jpg`);
+	const brodImages = [0, 1, 2, 3, 4, 5].map(
+		(item) => `/assets/brod/${item}.jpg`,
+	);
+	const harfaImages = [0, 1].map((item) => `/assets/harfa/${item}.jpg`);
+	const heralecImages = [0, 1, 2, 3, 4, 5].map(
+		(item) => `/assets/heralec/${item}.jpg`,
+	);
+	const stukenImages = [0, 1, 2].map((item) => `/assets/stuken/${item}.jpg`);
 
 	return (
 		<section
