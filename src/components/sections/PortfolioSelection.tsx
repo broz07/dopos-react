@@ -1,6 +1,6 @@
 import AnchorTag from '../ui/AnchorTag';
 
-const ReferenceSection = () => {
+const PortfolioSelection = () => {
 	return (
 		<section
 			className={`grow relative bg-green-600 scrollama-step`}
@@ -13,4 +13,4 @@ const ReferenceSection = () => {
 	);
 };
 
-export default ReferenceSection;
+export default PortfolioSelection;

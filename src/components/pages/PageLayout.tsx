@@ -4,7 +4,7 @@ import Header from '@dopos/components/ui/Header';
 import { useEffect } from 'react';
 import AboutSection from '@dopos/components/sections/AboutSection';
 import ServiceSection from '@dopos/components/sections/ServiceSection';
-import ReferenceSection from '@dopos/components/sections/ReferenceSection';
+import PortfolioSelection from '@dopos/components/sections/PortfolioSelection';
 import ContactSection from '@dopos/components/sections/ContactSection';
 import scrollama from 'scrollama';
 import Footer from '../ui/Footer';
@@ -71,7 +71,7 @@ const PageLayout: React.FC = () => {
 				<ParallaxSection />
 				<AboutSection />
 				<CountupSection />
-				<ReferenceSection />
+				<PortfolioSelection />
 				<ContactSection />
 			</main>
 			<Footer />
