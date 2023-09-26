@@ -28,19 +28,19 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 					size="small"
 					color="inherit"
 					sx={{
-						position: "absolute !important",
-						top: "50% !important",
-						left: "0.75rem !important",
+						position: 'absolute !important',
+						top: '50% !important',
+						left: '0.75rem !important',
 						zIndex: 10,
-						minWidth: "0px !important",
-						minHeight: "0px !important",
-						width: "3rem !important",
-						height: "3rem !important",
-						backgroundColor: "white !important",
-						color: "rgb(27,25,24)",
-						":hover": {
-							backgroundColor: "white !important"
-						}
+						minWidth: '0px !important',
+						minHeight: '0px !important',
+						width: '3rem !important',
+						height: '3rem !important',
+						backgroundColor: 'white !important',
+						color: 'rgb(27,25,24)',
+						':hover': {
+							backgroundColor: 'white !important',
+						},
 					}}
 					onClick={() => {
 						if (index === 0) return;
@@ -55,19 +55,19 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 					size="small"
 					color="inherit"
 					sx={{
-						position: "absolute !important",
-						top: "50% !important",
-						right: "0.75rem !important",
+						position: 'absolute !important',
+						top: '50% !important',
+						right: '0.75rem !important',
 						zIndex: 10,
-						minWidth: "0px !important",
-						minHeight: "0px !important",
-						width: "3rem !important",
-						height: "3rem !important",
-						backgroundColor: "white !important",
-						color: "rgb(27,25,24)",
-						":hover": {
-							backgroundColor: "white !important"
-						}
+						minWidth: '0px !important',
+						minHeight: '0px !important',
+						width: '3rem !important',
+						height: '3rem !important',
+						backgroundColor: 'white !important',
+						color: 'rgb(27,25,24)',
+						':hover': {
+							backgroundColor: 'white !important',
+						},
 					}}
 					onClick={() => {
 						if (index === images.length - 1) return;
@@ -103,18 +103,18 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 				<Button
 					// className="mt-6 normal-case bg-dopos-blue hover:bg-dopos-blue text-white font-semibold py-2 px-4 rounded text-base"
 					sx={{
-						marginTop: "1.5rem",
-						textTransform: "none",
-						backgroundColor: "rgb(0,158,224)",
-						color: "white",
+						marginTop: '1.5rem',
+						textTransform: 'none',
+						backgroundColor: 'rgb(0,158,224)',
+						color: 'white',
 						fontWeight: 600,
-						padding: "0.5rem 1rem 0.5rem 1rem",
-						borderRadius: "0.25rem",
-						fontSize: "1rem",
-						lineHeight: "1.5rem",
-						"&:hover": {
-							backgroundColor: "rgb(0,158,224)"
-						}
+						padding: '0.5rem 1rem 0.5rem 1rem',
+						borderRadius: '0.25rem',
+						fontSize: '1rem',
+						lineHeight: '1.5rem',
+						'&:hover': {
+							backgroundColor: 'rgb(0,158,224)',
+						},
 					}}
 					variant="contained"
 					href="#kontakt"

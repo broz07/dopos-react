@@ -83,15 +83,15 @@ const PortfolioSelection = () => {
 					<Button
 						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
 						sx={{
-							minWidth: "0px !important",
-							minHeight: "0px !important",
-							width: "3rem !important",
-							height: "3rem !important",
-							backgroundColor: "rgb(27,25,24) !important",
-							color: "white",
-							":hover": {
-								backgroundColor: "rgb(27,25,24) !important"
-							}
+							minWidth: '0px !important',
+							minHeight: '0px !important',
+							width: '3rem !important',
+							height: '3rem !important',
+							backgroundColor: 'rgb(27,25,24) !important',
+							color: 'white',
+							':hover': {
+								backgroundColor: 'rgb(27,25,24) !important',
+							},
 						}}
 						variant="contained"
 						size="small"
@@ -106,15 +106,15 @@ const PortfolioSelection = () => {
 					<Button
 						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
 						sx={{
-							minWidth: "0px !important",
-							minHeight: "0px !important",
-							width: "3rem !important",
-							height: "3rem !important",
-							backgroundColor: "rgb(27,25,24) !important",
-							color: "white",
-							":hover": {
-								backgroundColor: "rgb(27,25,24) !important"
-							}
+							minWidth: '0px !important',
+							minHeight: '0px !important',
+							width: '3rem !important',
+							height: '3rem !important',
+							backgroundColor: 'rgb(27,25,24) !important',
+							color: 'white',
+							':hover': {
+								backgroundColor: 'rgb(27,25,24) !important',
+							},
 						}}
 						variant="contained"
 						size="small"
