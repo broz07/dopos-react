@@ -20,7 +20,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 	if (typeof images === 'string') images = [images];
 
 	return (
-		<div className="relative w-full h-full flex desktop:flex-row laptop:flex-row flex-col justify-start items-center">
+		<div className="relative w-full h-full max-h-[38rem] flex desktop:flex-row laptop:flex-row flex-col justify-start items-center">
 			<div className="relative desktop:w-1/2 laptop:w-1/2 desktop:h-full laptop:h-full w-full h-1/2">
 				<Button
 					// className="absolute top-1/2 left-3 z-10 min-w-0 min-h-0 w-12 h-12 bg-white text-dopos-black hover:bg-white"

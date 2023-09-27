@@ -37,9 +37,9 @@ const PortfolioSelection = () => {
 					</h2>
 				</div>
 
-				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none max-h-[40rem]">
+				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none max-h-[38rem]">
 					<SwipeableViews
-						className="w-full h-full"
+						className="w-full h-full max-h-[38rem]"
 						enableMouseEvents
 						index={index}
 						onChangeIndex={(index) => setIndex(index)}
