@@ -28,12 +28,15 @@ const PortfolioSelection = () => {
 		>
 			<AnchorTag section="portfolio" />
 			<div className="w-full h-full flex flex-col justify-start items-center py-8 px-16">
-				<h2 className="uppercase h-1/6 grid text-5xl font-bold text-center mb-8">
-					<small className="text-lg font-normal text-dopos-blue mb-0">
-						Prohlédněte si naše
-					</small>
-					{`realizované projekty`}
-				</h2>
+				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12">
+					<h2 className="uppercase grid text-5xl font-bold text-center">
+						<small className="text-lg font-semibold text-dopos-blue mb-0">
+							Prohlédněte si naše
+						</small>
+						{`realizované projekty`}
+					</h2>
+				</div>
+
 				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none">
 					<SwipeableViews
 						className="w-full h-full"

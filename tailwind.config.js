@@ -15,6 +15,10 @@ module.exports = {
 				'dopos-red': '#e30016',
 				'dopos-black': '#1b1918',
 			},
+			flexGrow: {
+				2: 2,
+				3: 3,
+			},
 		},
 		screens: {
 			mobile: '480px',

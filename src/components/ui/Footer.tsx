@@ -1,9 +1,34 @@
+import Link from 'next/link';
 import ContactCol from './ContactCol';
 
 const Footer = () => {
+	const year = new Date().getFullYear();
+
 	return (
 		<footer className={`desktop:h-auto py-4 bg-dopos-black text-white`}>
 			<div
+				className={`flex flex-row justify-center items-center text-center text-gray-400`}
+			>
+				<span
+					className={`mr-2`}
+				>
+					{`© ${year} DOPOS HK s.r.o.`}
+				</span>
+				<span
+					className={`ml-2`}
+				>
+					{`Vytvořil: `}
+					<Link
+						href='https://www.linkedin.com/in/broz-daniel'
+						target='_blank'
+						className='text-white hover:text-dopos-blue transition-all duration-300 ease-in-out'
+					> 
+						Daniel Brož
+					</Link>
+				</span>
+			</div>
+
+			{/* <div
 				className={`flex desktop:flex-row laptop:flex-row flex-col justify-between desktop:px-20 laptop:px-16 content-center`}
 			>
 				<ContactCol
@@ -24,7 +49,7 @@ const Footer = () => {
 					title="Napište nám"
 					text="straka@doposhk.cz"
 				/>
-			</div>
+			</div> */}
 		</footer>
 	);
 };
