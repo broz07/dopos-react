@@ -7,15 +7,15 @@ const CountupSection = () => {
 
 	return (
 		<div
-			className="h-48 w-full flex flex-col justify-center items-center scrollama-step"
+			className="min-h-[12rem] h-auto w-full flex flex-col justify-center items-center scrollama-step"
 			data-step="countup"
 		>
 			<Parallax
-				className="h-full w-full flex flex-col justify-center items-center"
+				className="min-h-[12rem] h-auto w-full flex flex-col justify-center items-center"
 				bgImage="/assets/img7.webp"
 				blur={{ min: 0, max: 6 }}
 				strength={500}
-				contentClassName="flex flex-row w-full h-full justify-between items-center gap-8 text-dopos-black px-72"
+				contentClassName="flex desktop:flex-row laptop:flex-row flex-col w-full h-full justify-center items-center gap-8 text-dopos-black p-8"
 			>
 				<Count
 					text="rok založení"
