@@ -73,7 +73,7 @@ const ContactSection = () => {
 						}}
 						variant="contained"
 						href="https://maps.app.goo.gl/3GeaSaZ3MaTM8UmP8"
-						target='_blank'
+						target="_blank"
 						endIcon={<EastIcon />}
 					>
 						Najděte nás!

@@ -12,7 +12,7 @@ const ServiceSection = () => {
 			<AnchorTag section="sluzby" />
 			<div
 				className={`flex flex-col justify-center items-center w-full h-auto p-10`}
-				style={{ minHeight: 'calc(100vh - 4rem)'}}
+				style={{ minHeight: 'calc(100vh - 4rem)' }}
 			>
 				<div
 					className={`flex flex-col justify-center items-center w-full px-8 text-dopos-black max-w-4xl mb-8`}
