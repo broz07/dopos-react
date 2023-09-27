@@ -7,14 +7,6 @@ const HomeSection = () => {
 			className="relative h-screen w-screen scrollama-step bg-white"
 			data-step="home"
 		>
-			{/* <ImageCarousel /> */}
-			{/* <Image
-				src="/assets/img3.jpeg"
-				alt="Sample Image"
-				width={1920}
-				height={1080}
-				className="w-full h-full object-cover opacity-80"
-			/> */}
 			<div className="absolute top-0 w-full h-full bg-white opacity-30" />
 			<video
 				src="/assets/video.mp4"

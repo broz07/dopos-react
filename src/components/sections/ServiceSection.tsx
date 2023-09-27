@@ -5,13 +5,14 @@ import ServiceCard from '../ui/ServiceCard';
 const ServiceSection = () => {
 	return (
 		<section
-			className={`grow relative bg-gray-100 scrollama-step`}
+			className={`grow relative flex flex-col justify-center items-center w-full bg-gray-100 scrollama-step h-auto`}
 			data-step="sluzby"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			style={{ minHeight: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="sluzby" />
 			<div
-				className={`flex flex-col justify-center items-center w-full h-full`}
+				className={`flex flex-col justify-center items-center w-full h-auto p-10`}
+				style={{ minHeight: 'calc(100vh - 4rem)'}}
 			>
 				<div
 					className={`flex flex-col justify-center items-center w-full px-8 text-dopos-black max-w-4xl mb-8`}
@@ -27,7 +28,7 @@ const ServiceSection = () => {
 						</a>
 					</p>
 				</div>
-				<div className="flex flex-row justify-evenly items-center w-full text-dopos-black">
+				<div className="grid desktop:grid-rows-1 desktop:grid-cols-4 desktop:gap-x-16 laptop:grid-rows-1 laptop:grid-cols-4 laptop:gap-x-8 tablet:grid tablet:grid-cols-2 tablet:auto-rows-auto tablet:gap-4 tablet:px-4 grid-cols-1 auto-rows-auto gap-4 w-full h-full text-dopos-black">
 					<ServiceCard
 						image="/assets/img1.jpg"
 						title="Provětrávané fasády"
