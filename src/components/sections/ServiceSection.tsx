@@ -5,14 +5,14 @@ import ServiceCard from '../ui/ServiceCard';
 const ServiceSection = () => {
 	return (
 		<section
-			className={`grow relative flex flex-col justify-center items-center w-full bg-gray-100 scrollama-step h-auto`}
+			className={`grow relative flex flex-col justify-center items-center w-full bg-gray-100 scrollama-step h-auto min-h-[60rem]`}
 			data-step="sluzby"
-			style={{ minHeight: 'calc(100vh - 4rem)' }}
+			// style={{ minHeight: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="sluzby" />
 			<div
-				className={`flex flex-col justify-center items-center w-full h-auto p-10`}
-				style={{ minHeight: 'calc(100vh - 4rem)' }}
+				className={`flex flex-col justify-center items-center w-full h-auto min-h-[60rem] p-10`}
+				// style={{ minHeight: 'calc(100vh - 4rem)' }}
 			>
 				<div
 					className={`flex flex-col justify-center items-center w-full px-8 text-dopos-black max-w-4xl mb-8`}

@@ -22,13 +22,13 @@ const PortfolioSelection = () => {
 
 	return (
 		<section
-			className={`grow relative bg-gray-100 scrollama-step`}
+			className={`grow relative bg-gray-100 scrollama-step h-auto min-h-[60rem]`}
 			data-step="portfolio"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			// style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="portfolio" />
-			<div className="w-full h-full flex flex-col justify-start items-center py-8 px-16">
-				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12">
+			<div className="w-full h-auto min-h-[60rem] flex flex-col justify-center items-center py-8 px-16">
+				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12 max-h-32">
 					<h2 className="uppercase grid text-5xl font-bold text-center">
 						<small className="text-lg font-semibold text-dopos-blue mb-0">
 							Prohlédněte si naše
@@ -37,7 +37,7 @@ const PortfolioSelection = () => {
 					</h2>
 				</div>
 
-				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none">
+				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none max-h-[40rem]">
 					<SwipeableViews
 						className="w-full h-full"
 						enableMouseEvents
@@ -82,7 +82,7 @@ const PortfolioSelection = () => {
 						/>
 					</SwipeableViews>
 				</div>
-				<div className="w-full h-1/6 flex justify-center items-center gap-2 mt-4">
+				<div className="w-full h-1/6 flex justify-center items-center gap-2 mt-4 max-h-24">
 					<Button
 						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
 						sx={{

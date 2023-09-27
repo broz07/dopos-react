@@ -6,9 +6,9 @@ import EastIcon from '@mui/icons-material/East';
 const ContactSection = () => {
 	return (
 		<section
-			className={`grow relative bg-dopos-black text-gray-100 scrollama-step py-20 flex flex-col justify-start items-center`}
+			className={`grow relative bg-dopos-black text-gray-100 scrollama-step py-20 flex flex-col justify-start h-auto min-h-[60rem] items-center`}
 			data-step="kontakt"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			// style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="kontakt" />
 			<div className="w-full h-1/6 flex justify-center items-center max-w-5xl mb-12">
