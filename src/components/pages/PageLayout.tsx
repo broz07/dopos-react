@@ -14,6 +14,7 @@ import HomeSection from '../sections/HomeSection';
 import { Parallax } from 'react-parallax';
 import ParallaxSection from '../sections/ParallaxSection';
 import CountupSection from '../sections/CountupSection';
+import PartnerSection from '../sections/PartnerSection';
 
 const PageLayout: React.FC = () => {
 	const { setCurrentPage, setAnimationPlayed, setAnimationTriggered } =
@@ -72,6 +73,7 @@ const PageLayout: React.FC = () => {
 				<AboutSection />
 				<CountupSection />
 				<PortfolioSelection />
+				<PartnerSection />
 				<ContactSection />
 			</main>
 			<Footer />
