@@ -23,7 +23,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="cs" className={`scroll-smooth box-content`}>
-			<Head><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /></Head>
 			<body className={`${barlow.className}`}>{children}</body>
 		</html>
 	);
