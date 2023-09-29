@@ -5,29 +5,29 @@ import ServiceCard from '../ui/ServiceCard';
 const ServiceSection = () => {
 	return (
 		<section
-			className={`grow relative bg-gray-100 scrollama-step`}
+			className={`grow relative flex flex-col justify-center items-center w-full bg-gray-100 scrollama-step h-auto min-h-[56rem]`}
 			data-step="sluzby"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			// style={{ minHeight: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="sluzby" />
 			<div
-				className={`flex flex-col justify-center items-center w-full h-full`}
+				className={`flex flex-col justify-start items-center w-full h-auto min-h-[56rem] p-10`}
+				// style={{ minHeight: 'calc(100vh - 4rem)' }}
 			>
 				<div
-					className={`flex flex-col justify-center items-center w-full px-8 text-dopos-black max-w-4xl mb-8`}
+					className={`flex flex-col justify-center items-center w-full px-8 text-dopos-black max-w-4xl mb-10`}
 				>
 					<h2 className={`text-5xl font-bold text-center mb-4`}>
 						Co pro vás můžeme udělat
 					</h2>
 					<p className={`text-2xl text-center text-gray-500`}>
 						{`Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům, včetně komplexního servisu. Na konkrétní zadání zpracujeme zdarma cenovou nabídku. `}
-						<a href="" className={`text-dopos-blue`}>
-							{/* TODO */}
+						<a href="#kontakt" className={`text-dopos-blue`}>
 							Napište nám!
 						</a>
 					</p>
 				</div>
-				<div className="flex flex-row justify-evenly items-center w-full text-dopos-black">
+				<div className="grid desktop:grid-rows-1 desktop:grid-cols-4 desktop:gap-x-16 laptop:grid-rows-1 laptop:grid-cols-4 laptop:gap-x-8 tablet:grid tablet:grid-cols-2 tablet:auto-rows-auto tablet:gap-4 tablet:px-4 grid-cols-1 auto-rows-auto gap-4 w-full h-full text-dopos-black">
 					<ServiceCard
 						image="/assets/img1.jpg"
 						title="Provětrávané fasády"

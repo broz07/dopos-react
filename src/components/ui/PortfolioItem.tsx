@@ -20,8 +20,8 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 	if (typeof images === 'string') images = [images];
 
 	return (
-		<div className="relative w-full h-full flex flex-row justify-start items-center">
-			<div className="relative w-1/2 h-full">
+		<div className="relative w-full h-full max-h-[34rem] flex desktop:flex-row laptop:flex-row flex-col justify-start items-center">
+			<div className="relative desktop:w-1/2 laptop:w-1/2 desktop:h-full laptop:h-full w-full h-1/2">
 				<Button
 					// className="absolute top-1/2 left-3 z-10 min-w-0 min-h-0 w-12 h-12 bg-white text-dopos-black hover:bg-white"
 					variant="contained"
@@ -97,8 +97,10 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 					))}
 				</SwipeableViews>
 			</div>
-			<div className="w-1/2 h-full pl-6 flex flex-col justify-center items-start">
-				<h3 className="uppercase font-bold text-3xl mb-7">{title}</h3>
+			<div className="relative desktop:w-1/2 laptop:w-1/2 desktop:h-full laptop:h-full w-full h-1/2 desktop:pl-6 laptop:pl-6 p-2 flex flex-col justify-center items-start">
+				<h3 className="uppercase font-bold text-3xl desktop:mb-7 laptop:mb-7 mb-2">
+					{title}
+				</h3>
 				<p className="text-lg text-gray-500 mb-0">{description}</p>
 				<Button
 					// className="mt-6 normal-case bg-dopos-blue hover:bg-dopos-blue text-white font-semibold py-2 px-4 rounded text-base"

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import './globals.css';
 import { Barlow_Condensed } from 'next/font/google';
 
@@ -6,9 +7,11 @@ const barlow = Barlow_Condensed({
 	weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
 
+// add shrink to fit = no
+
 export const metadata = {
 	title: 'DOPOS HK s.r.o.',
-	// todo keywords, description, author, robots, viewport, og, twitter
+	// add shrink to fit = no
 };
 
 export default function RootLayout({

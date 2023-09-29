@@ -6,12 +6,12 @@ import EastIcon from '@mui/icons-material/East';
 const ContactSection = () => {
 	return (
 		<section
-			className={`grow relative bg-dopos-black text-gray-100 scrollama-step py-20 flex flex-col justify-start items-center`}
+			className={`grow relative bg-dopos-black text-gray-100 scrollama-step py-20 flex flex-col justify-start h-auto min-h-[60rem] items-center`}
 			data-step="kontakt"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			// style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="kontakt" />
-			<div className="w-full h-1/6 flex justify-center items-center max-w-5xl mb-12">
+			<div className="w-full h-1/6 flex justify-center items-center max-w-5xl max-h-20 mb-12">
 				<h2 className="uppercase grid text-5xl font-bold text-center">
 					<small className="text-lg font-semibold text-dopos-blue mb-0">
 						Chcete se na něco zeptat?
@@ -19,8 +19,8 @@ const ContactSection = () => {
 					{`Kontaktujte nás!`}
 				</h2>
 			</div>
-			<div className="w-full h-auto max-w-5xl flex flex-row justify-center items-start">
-				<div className="w-2/3 flex flex-row">
+			<div className="w-full h-auto max-w-5xl flex desktop:flex-row laptop:flex-row tablet:flex-row flex-col justify-center items-start p-8">
+				<div className="desktop:w-2/3 laptop:w-2/3 tablet:w-1/2 w-full flex desktop:flex-row laptop:flex-row flex-col pb-8">
 					<Contact
 						fullname="Martin Straka"
 						role="Jednatel společnosti"
@@ -33,7 +33,7 @@ const ContactSection = () => {
 						email="strakova@doposhk.cz"
 					/>
 				</div>
-				<div className="w-1/3 flex flex-col justify-start bg-dopos-blue p-6 rounded-md">
+				<div className="desktop:w-1/3 laptop:w-1/3 tablet:w-1/2 w-full flex flex-col justify-start bg-dopos-blue p-8 rounded-md">
 					<h3 className="uppercase text-3xl font-bold leading-none mb-2">
 						Kontaktní údaje
 					</h3>
@@ -73,7 +73,7 @@ const ContactSection = () => {
 						}}
 						variant="contained"
 						href="https://maps.app.goo.gl/3GeaSaZ3MaTM8UmP8"
-						target='_blank'
+						target="_blank"
 						endIcon={<EastIcon />}
 					>
 						Najděte nás!

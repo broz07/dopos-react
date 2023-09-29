@@ -9,20 +9,14 @@ const Footer = () => {
 			<div
 				className={`flex flex-row justify-center items-center text-center text-gray-400`}
 			>
-				<span
-					className={`mr-2`}
-				>
-					{`© ${year} DOPOS HK s.r.o.`}
-				</span>
-				<span
-					className={`ml-2`}
-				>
+				<span className={`mr-2`}>{`© ${year} DOPOS HK s.r.o.`}</span>
+				<span className={`ml-2`}>
 					{`Vytvořil: `}
 					<Link
-						href='https://www.linkedin.com/in/broz-daniel'
-						target='_blank'
-						className='text-white hover:text-dopos-blue transition-all duration-300 ease-in-out'
-					> 
+						href="https://www.linkedin.com/in/broz-daniel"
+						target="_blank"
+						className="text-white hover:text-dopos-blue transition-all duration-300 ease-in-out"
+					>
 						Daniel Brož
 					</Link>
 				</span>

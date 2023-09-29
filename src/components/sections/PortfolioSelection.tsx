@@ -22,13 +22,13 @@ const PortfolioSelection = () => {
 
 	return (
 		<section
-			className={`grow relative bg-gray-100 scrollama-step`}
+			className={`grow relative bg-gray-100 scrollama-step h-auto min-h-[60rem]`}
 			data-step="portfolio"
-			style={{ height: 'calc(100vh - 4rem)' }}
+			// style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="portfolio" />
-			<div className="w-full h-full flex flex-col justify-start items-center py-8 px-16">
-				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12">
+			<div className="w-full h-auto min-h-[60rem] flex flex-col justify-start items-center py-8 desktop:px-16 laptop:px-16 tablet:px-16 px-8">
+				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12 max-h-32">
 					<h2 className="uppercase grid text-5xl font-bold text-center">
 						<small className="text-lg font-semibold text-dopos-blue mb-0">
 							Prohlédněte si naše
@@ -36,24 +36,23 @@ const PortfolioSelection = () => {
 						{`realizované projekty`}
 					</h2>
 				</div>
-
-				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none">
+				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none max-h-[34rem] min-h-[34rem]">
 					<SwipeableViews
-						className="w-full h-full"
+						className="w-full h-full max-h-[34rem]"
 						enableMouseEvents
 						index={index}
 						onChangeIndex={(index) => setIndex(index)}
 						containerStyle={{ height: '100%' }}
 					>
 						<PortfolioItem
-							images={brodImages}
-							title="SPŠŠ Havlíčkuv Brod"
-							description="Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
-						/>
-						<PortfolioItem
 							images={harfaImages}
 							title="Harfa Park VI"
 							description="Harfa Park VI je poslední etapou dosud největšího bytového projektu v Praze. Naše firma zde provedla zateplenou provětrávanou fasádu deskami CEMBRIT, cca 300 m2."
+						/>
+						<PortfolioItem
+							images={brodImages}
+							title="SPŠŠ Havlíčkuv Brod"
+							description="Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
 						/>
 						<PortfolioItem
 							images={stukenImages}
@@ -82,72 +81,74 @@ const PortfolioSelection = () => {
 						/>
 					</SwipeableViews>
 				</div>
-				<div className="w-full h-1/6 flex justify-center items-center gap-2 mt-4">
-					<Button
-						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
-						sx={{
-							minWidth: '0px !important',
-							minHeight: '0px !important',
-							width: '3rem !important',
-							height: '3rem !important',
-							backgroundColor: 'rgb(27,25,24) !important',
-							color: 'white',
-							':hover': {
+				<div className="w-full h-1/6 flex flex-col gap-2 justify-center items-center max-h-24">
+					<div className="w-full flex flex-row justify-center items-center gap-4 mt-12 max-h-24">
+						<Button
+							// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+							sx={{
+								minWidth: '0px !important',
+								minHeight: '0px !important',
+								width: '3rem !important',
+								height: '3rem !important',
 								backgroundColor: 'rgb(27,25,24) !important',
-							},
-						}}
-						variant="contained"
-						size="small"
-						color="inherit"
-						onClick={() => {
-							if (index === 0) return;
-							setIndex((prev) => prev - 1);
-						}}
-					>
-						<ArrowBackIcon />
-					</Button>
-					<Button
-						// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
-						sx={{
-							minWidth: '0px !important',
-							minHeight: '0px !important',
-							width: '3rem !important',
-							height: '3rem !important',
-							backgroundColor: 'rgb(27,25,24) !important',
-							color: 'white',
-							':hover': {
+								color: 'white',
+								':hover': {
+									backgroundColor: 'rgb(27,25,24) !important',
+								},
+							}}
+							variant="contained"
+							size="small"
+							color="inherit"
+							onClick={() => {
+								if (index === 0) return;
+								setIndex((prev) => prev - 1);
+							}}
+						>
+							<ArrowBackIcon />
+						</Button>
+						<Button
+							// className="min-w-0 min-h-0 w-12 h-12 bg-dopos-black text-white hover:bg-dopos-black"
+							sx={{
+								minWidth: '0px !important',
+								minHeight: '0px !important',
+								width: '3rem !important',
+								height: '3rem !important',
 								backgroundColor: 'rgb(27,25,24) !important',
-							},
-						}}
-						variant="contained"
-						size="small"
-						color="inherit"
-						onClick={() => {
-							if (index === 6) return;
-							setIndex((prev) => prev + 1);
-						}}
-					>
-						<ArrowForwardIcon />
-					</Button>
-				</div>
-				<ul className="inline-flex justify-center items-center w-full h-12 mt-2 gap-2">
-					{[0, 1, 2, 3, 4, 5, 6].map((item) => (
-						<li
-							key={item}
-							className={`block h-2 w-[5rem] cursor-pointer rounded-full ${
-								index === item ? 'bg-dopos-blue' : 'bg-gray-300'
-							}`}
-							onClick={() => setIndex(item)}
-						/>
-					))}
-					{/* <li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
+								color: 'white',
+								':hover': {
+									backgroundColor: 'rgb(27,25,24) !important',
+								},
+							}}
+							variant="contained"
+							size="small"
+							color="inherit"
+							onClick={() => {
+								if (index === 6) return;
+								setIndex((prev) => prev + 1);
+							}}
+						>
+							<ArrowForwardIcon />
+						</Button>
+					</div>
+					<ul className="inline-flex justify-center items-center w-full h-12 mt-2 gap-2">
+						{[0, 1, 2, 3, 4, 5, 6].map((item) => (
+							<li
+								key={item}
+								className={`block h-2 w-[5rem] cursor-pointer rounded-full ${
+									index === item ? 'bg-dopos-blue' : 'bg-gray-300'
+								}`}
+								onClick={() => setIndex(item)}
+							/>
+						))}
+						{/* <li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/>
 					<li className='block h-2 w-[5rem] rounded-full bg-gray-300'/> */}
-				</ul>
+					</ul>
+				</div>
 			</div>
 		</section>
 	);
