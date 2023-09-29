@@ -20,7 +20,7 @@ const AboutSection = () => {
 					</h2>
 				</div>
 				<div
-					className='w-full min-h-[42rem] grid laptop:grid desktop:grid-rows-5 desktop:grid-col-3 desktop:gap-16 laptop:grid-rows-5 laptop:grid-col-3 laptop:gap-16 grid-cols-1 auto-rows-auto gap-8'
+					className='w-full min-h-[42rem] grid laptop:grid desktop:grid-rows-5 desktop:grid-col-3 desktop:gap-16 laptop:grid-rows-5 laptop:grid-col-3 laptop:gap-16 grid-col-1 auto-rows-auto gap-8'
 				>
 					<AboutCard
 						image="/assets/reviews.svg"
