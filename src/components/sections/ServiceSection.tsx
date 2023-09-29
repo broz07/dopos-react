@@ -31,12 +31,12 @@ const ServiceSection = () => {
 					<ServiceCard
 						image="/assets/img1.jpg"
 						title="Provětrávané fasády"
-						description="Jsme certifikovanou firmou pro dodávku a montáž sádrokartonových, sádrovláknitých a akustických systémů. Využít je lze na montáž příček, obkladů stěn, montáž podhledů a opláštění podkroví nebo i k realizaci suchých lehkých podlah."
+						description="Zaměřujeme se především na návrh a realizaci provětrávaných fasád. Tyto fasády se od kontaktních fasád liší svislou vzduchovou mezeru, kterou je odvětráván vzduch a tím je zajištěn odvod vlhkosti z izolace. Konkrétní typ tepelněizolačních desek se volí s ohledem na požadavky na tuhost a objemovou hmotnost materiálu."
 					/>
 					<ServiceCard
 						image="/assets/img2.jpg"
 						title="Sádrokartony, akustika"
-						description="Zaměřujeme se především na návrh a realizaci provětrávaných fasád. Tyto fasády se od kontaktních fasád liší svislou vzduchovou mezeru, kterou je odvětráván vzduch a tím je zajištěn odvod vlhkosti z izolace. Konkrétní typ tepelněizolačních desek se volí s ohledem na požadavky na tuhost a objemovou hmotnost materiálu."
+						description="Jsme certifikovanou firmou pro dodávku a montáž sádrokartonových, sádrovláknitých a akustických systémů. Využít je lze na montáž příček, obkladů stěn, montáž podhledů a opláštění podkroví nebo i k realizaci suchých lehkých podlah."
 					/>
 					<ServiceCard
 						image="/assets/img3.jpeg"

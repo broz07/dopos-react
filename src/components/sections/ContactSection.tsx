@@ -28,7 +28,7 @@ const ContactSection = () => {
 						email="straka@doposhk.cz"
 					/>
 					<Contact
-						fullname="Iva Strakova"
+						fullname="Iva Straková"
 						role="Jednatelka, ekonomika"
 						email="strakova@doposhk.cz"
 					/>
