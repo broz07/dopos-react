@@ -103,7 +103,7 @@ const PortfolioSelection = () => {
 								if (index === 0) return;
 								setIndex((prev) => prev - 1);
 							}}
-							aria-label='Předchozí projekt'
+							aria-label="Předchozí projekt"
 						>
 							<ArrowBackIcon />
 						</Button>
@@ -127,7 +127,7 @@ const PortfolioSelection = () => {
 								if (index === 6) return;
 								setIndex((prev) => prev + 1);
 							}}
-							aria-label='Další projekt'
+							aria-label="Další projekt"
 						>
 							<ArrowForwardIcon />
 						</Button>

@@ -46,7 +46,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 						if (index === 0) return;
 						setIndex((prev) => prev - 1);
 					}}
-					aria-label='Předchozí obrázek'
+					aria-label="Předchozí obrázek"
 				>
 					<ArrowBackIcon />
 				</Button>
@@ -74,7 +74,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 						if (index === images.length - 1) return;
 						setIndex((prev) => prev + 1);
 					}}
-					aria-label='Další obrázek'
+					aria-label="Další obrázek"
 				>
 					<ArrowForwardIcon />
 				</Button>
