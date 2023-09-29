@@ -13,7 +13,9 @@ const HomeSection = () => {
 				autoPlay
 				loop
 				muted
-				className="w-full h-full object-cover"
+				controls={false}
+				playsInline
+				className="w-full h-full object-cover z-[-1]"
 			/>
 			<div className="absolute top-0 w-full h-full flex flex-col justify-center items-center text-dopos-black">
 				<h1 className="text-7xl font-bold text-center uppercase">

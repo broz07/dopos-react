@@ -7,13 +7,11 @@ const barlow = Barlow_Condensed({
 	weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
 
-// add shrink to fit = no 
+// add shrink to fit = no
 
 export const metadata = {
 	title: 'DOPOS HK s.r.o.',
 	// add shrink to fit = no
-
-
 };
 
 export default function RootLayout({
