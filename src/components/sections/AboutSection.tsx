@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import AnchorTag from '../ui/AnchorTag';
-import ServiceCard from '../ui/ServiceCard';
 import AboutCard from '../ui/AboutCard';
 const AboutSection = () => {
 	return (

@@ -35,26 +35,40 @@ const MobileMenu: React.FC = () => {
 						setCurrentPage(MenuValues[newValue]);
 					}}
 				>
-					<BottomNavigationAction label="Domů" icon={<HomeIcon />} href="#" />
+					<BottomNavigationAction
+						label="Domů"
+						icon={<HomeIcon />}
+						href="#"
+						aria-label="Domů"
+						aria-current={currentPage === 'home' ? 'page' : undefined}
+					/>
 					<BottomNavigationAction
 						label="Služby"
 						icon={<HomeRepairServiceIcon />}
 						href="#sluzby"
+						aria-label="Naše služby"
+						aria-current={currentPage === 'sluzby' ? 'page' : undefined}
 					/>
 					<BottomNavigationAction
 						label="O nás"
 						icon={<InfoIcon />}
 						href="#o-nas"
+						aria-label="O nás"
+						aria-current={currentPage === 'o-nas' ? 'page' : undefined}
 					/>
 					<BottomNavigationAction
 						label="Portfolio"
 						icon={<CoPresentIcon />}
 						href="#portfolio"
+						aria-label="Portfolio"
+						aria-current={currentPage === 'portfolio' ? 'page' : undefined}
 					/>
 					<BottomNavigationAction
 						label="Kontakt"
 						icon={<PhoneIcon />}
 						href="#kontakt"
+						aria-label="Kontakt"
+						aria-current={currentPage === 'kontakt' ? 'page' : undefined}
 					/>
 				</BottomNavigation>
 			</Paper>

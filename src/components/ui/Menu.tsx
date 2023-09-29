@@ -21,6 +21,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'home' ? 'current-page' : ''
 					}`}
+					aria-label="Domů"
+					aria-current={currentPage === 'home' ? 'page' : undefined}
 				>
 					Domů
 				</a>
@@ -30,6 +32,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'sluzby' ? 'current-page' : ''
 					}`}
+					aria-label="Naše služby"
+					aria-current={currentPage === 'sluzby' ? 'page' : undefined}
 				>
 					Naše služby
 				</a>
@@ -39,6 +43,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'o-nas' ? 'current-page' : ''
 					}`}
+					aria-label="O nás"
+					aria-current={currentPage === 'o-nas' ? 'page' : undefined}
 				>
 					O nás
 				</a>
@@ -48,6 +54,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'portfolio' ? 'current-page' : ''
 					}`}
+					aria-label="Portfolio"
+					aria-current={currentPage === 'portfolio' ? 'page' : undefined}
 				>
 					Portfolio
 				</a>
@@ -57,6 +65,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'kontakt' ? 'current-page' : ''
 					}`}
+					aria-label="Kontakt"
+					aria-current={currentPage === 'kontakt' ? 'page' : undefined}
 				>
 					Kontakt
 				</a>
