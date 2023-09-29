@@ -46,14 +46,14 @@ const PortfolioSelection = () => {
 
 					>
 						<PortfolioItem
-							images={brodImages}
-							title="SPŠŠ Havlíčkuv Brod"
-							description="Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
-						/>
-						<PortfolioItem
 							images={harfaImages}
 							title="Harfa Park VI"
 							description="Harfa Park VI je poslední etapou dosud největšího bytového projektu v Praze. Naše firma zde provedla zateplenou provětrávanou fasádu deskami CEMBRIT, cca 300 m2."
+						/>
+						<PortfolioItem
+							images={brodImages}
+							title="SPŠŠ Havlíčkuv Brod"
+							description="Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
 						/>
 						<PortfolioItem
 							images={stukenImages}

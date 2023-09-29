@@ -32,14 +32,14 @@ const PartnerSection = () => {
                     partnerImages.map((partnerImage, index) => (
                         <div
                             key={index}
-                            className="flex justify-center items-center w-full h-full max-h-[100px] max-w-[200px]"
+                            className="flex justify-center items-center w-full h-full max-h-[100px]"
                         >
                             <Image 
                                 src={partnerImage.source}
                                 alt={partnerImage.alt}
                                 width={200}
                                 height={100}
-                                className="grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
+                                className="grayscale hover:grayscale-0 transition-all duration-500 ease-in-out object-cover"
                                 style={{maxHeight: "100px !important"}}
                             />
                         </div>
