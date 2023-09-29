@@ -75,6 +75,7 @@ const ContactSection = () => {
 						href="https://maps.app.goo.gl/3GeaSaZ3MaTM8UmP8"
 						target="_blank"
 						endIcon={<EastIcon />}
+						aria-label='Najděte nás!'
 					>
 						Najděte nás!
 					</Button>
