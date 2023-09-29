@@ -9,8 +9,8 @@ const barlow = Barlow_Condensed({
 
 export const metadata: Metadata = {
 	title: 'DOPOS HK s.r.o.',
-	applicationName: 'DOPOS HK s.r.o.',
-	description: 'Návrh a realizace provětrávaných fasád',
+	applicationName: 'DOPOS HK s.r.o. - Návrh a realizace provětrávaných fasád',
+	description: 'Optimalizujte svoji budovu s moderními provětranými fasádami. Nabízíme profesionální návrh a kvalitní realizaci s důrazem na energetickou účinnost. Získejte stylovou fasádu, která vám pomůže snížit náklady na vytápění a zvýší komfort ve vaší budově. Kontaktujte nás pro nejlepší řešení!',
 	authors: [
 		{ name: 'Daniel Brož', url: 'https://www.linkedin.com/in/broz-daniel' },
 	],
