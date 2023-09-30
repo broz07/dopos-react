@@ -10,6 +10,7 @@ import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { usePageContext } from '@dopos/contexts/PageContext';
+import { useTranslation } from 'react-i18next';
 
 const MenuValues: string[] = [
 	'home',
@@ -21,6 +22,7 @@ const MenuValues: string[] = [
 
 const MobileMenu: React.FC = () => {
 	const { currentPage, setCurrentPage } = usePageContext();
+	const { t } = useTranslation();
 
 	return (
 		<Box className={`desktop:hidden laptop:hidden pb-14`}>
@@ -34,41 +36,84 @@ const MobileMenu: React.FC = () => {
 					onChange={(event, newValue) => {
 						setCurrentPage(MenuValues[newValue]);
 					}}
+					style={{
+						fontFamily: 'inherit !important',
+					}}
 				>
 					<BottomNavigationAction
-						label="Domů"
+						label={t('menu.home')}
 						icon={<HomeIcon />}
 						href="#"
-						aria-label="Domů"
+						aria-label={t('menu.home')}
 						aria-current={currentPage === 'home' ? 'page' : undefined}
+						sx={{
+							span: {
+								fontFamily: 'inherit !important',
+							},
+							'&.Mui-selected': {
+								color: '#009ee0 !important',
+							},
+						}}
 					/>
 					<BottomNavigationAction
-						label="Služby"
+						label={t('menu.mobile-services')}
 						icon={<HomeRepairServiceIcon />}
 						href="#sluzby"
-						aria-label="Naše služby"
+						aria-label={t('menu.services')}
 						aria-current={currentPage === 'sluzby' ? 'page' : undefined}
+						sx={{
+							span: {
+								fontFamily: 'inherit !important',
+							},
+							'&.Mui-selected': {
+								color: '#009ee0 !important',
+							},
+						}}
 					/>
 					<BottomNavigationAction
-						label="O nás"
+						label={t('menu.about')}
 						icon={<InfoIcon />}
 						href="#o-nas"
-						aria-label="O nás"
+						aria-label={t('menu.about')}
 						aria-current={currentPage === 'o-nas' ? 'page' : undefined}
+						sx={{
+							span: {
+								fontFamily: 'inherit !important',
+							},
+							'&.Mui-selected': {
+								color: '#009ee0 !important',
+							},
+						}}
 					/>
 					<BottomNavigationAction
-						label="Portfolio"
+						label={t('menu.portfolio')}
 						icon={<CoPresentIcon />}
 						href="#portfolio"
-						aria-label="Portfolio"
+						aria-label={t('menu.portfolio')}
 						aria-current={currentPage === 'portfolio' ? 'page' : undefined}
+						sx={{
+							span: {
+								fontFamily: 'inherit !important',
+							},
+							'&.Mui-selected': {
+								color: '#009ee0 !important',
+							},
+						}}
 					/>
 					<BottomNavigationAction
-						label="Kontakt"
+						label={t('menu.contact')}
 						icon={<PhoneIcon />}
 						href="#kontakt"
-						aria-label="Kontakt"
+						aria-label={t('menu.contact')}
 						aria-current={currentPage === 'kontakt' ? 'page' : undefined}
+						sx={{
+							span: {
+								fontFamily: 'inherit !important',
+							},
+							'&.Mui-selected': {
+								color: '#009ee0 !important',
+							},
+						}}
 					/>
 				</BottomNavigation>
 			</Paper>

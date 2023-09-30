@@ -7,9 +7,11 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import React, { useState } from 'react';
 import PortfolioItem from '../ui/PortfolioItem';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioSelection = () => {
 	const [index, setIndex] = useState(0);
+	const { t } = useTranslation();
 
 	const brodImages = [0, 1, 2, 3, 4, 5].map(
 		(item) => `/assets/brod/${item}.jpg`,
@@ -24,16 +26,15 @@ const PortfolioSelection = () => {
 		<section
 			className={`grow relative bg-gray-100 scrollama-step h-auto min-h-[60rem]`}
 			data-step="portfolio"
-			// style={{ height: 'calc(100vh - 4rem)' }}
 		>
 			<AnchorTag section="portfolio" />
 			<div className="w-full h-auto min-h-[60rem] flex flex-col justify-start items-center py-8 desktop:px-16 laptop:px-16 tablet:px-16 px-8">
 				<div className="w-full h-1/6 flex justify-center items-center max-w-4xl mb-12 max-h-32">
 					<h2 className="uppercase grid text-5xl font-bold text-center">
 						<small className="text-lg font-semibold text-dopos-blue mb-0">
-							Prohlédněte si naše
+							{t('portfolio.title.small')}
 						</small>
-						{`realizované projekty`}
+						{t('portfolio.title.big')}
 					</h2>
 				</div>
 				<div className="w-full h-4/6 max-w-[102rem] border border-gray-300 select-none max-h-[34rem] min-h-[34rem]">
@@ -46,23 +47,23 @@ const PortfolioSelection = () => {
 					>
 						<PortfolioItem
 							images={harfaImages}
-							title="Harfa Park VI"
-							description="Harfa Park VI je poslední etapou dosud největšího bytového projektu v Praze. Naše firma zde provedla zateplenou provětrávanou fasádu deskami CEMBRIT, cca 300 m2."
+							title={t('portfolio.first.title')}
+							description={t('portfolio.first.text')}
 						/>
 						<PortfolioItem
 							images={brodImages}
-							title="SPŠŠ Havlíčkuv Brod"
-							description="Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
+							title={t('portfolio.second.title')}
+							description={t('portfolio.second.text')}
 						/>
 						<PortfolioItem
 							images={stukenImages}
-							title="Stueken Hradec Králové"
-							description="Nová hala společnosti STUEKEN s.r.o. Naše firma zde provedla 1250 m2 kazetových podhledů, 300 m2 příček a cca 150 m2 předsazených stěn."
+							title={t('portfolio.third.title')}
+							description={t('portfolio.third.text')}
 						/>
 						<PortfolioItem
 							images={heralecImages}
-							title="Základní škola Herálec"
-							description="Ve školní tělocvičně jsme nainstalovali cca 130 m2 akustických, nárazu odolných, pohltivých desek THERMATEX HERADESIGN."
+							title={t('portfolio.fourth.title')}
+							description={t('portfolio.fourth.text')}
 						/>
 						<PortfolioItem
 							images="/assets/img1.jpg"

@@ -34,7 +34,7 @@ const Header: React.FC<Props> = () => {
 		<header
 			className={`fixed left-0 right-0 top-0 z-50 ${
 				scrolled
-					? 'bg-gray-100 text-gray-900 h-16'
+					? 'bg-white text-gray-900 h-16'
 					: 'bg-transparent text-gray-900 h-20'
 			} transition-all duration-300 ease-in-out select-none`}
 		>
@@ -50,9 +50,6 @@ const Header: React.FC<Props> = () => {
 					<h1 className="text-2xl font-bold hidden">DOPOS HK s.r.o.</h1>
 				</div>
 				<Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
-				{/* <ul className={`desktop:hidden laptop:hidden flex`}>
-					TODO: MOBILNI MENU
-				</ul> */}
 			</div>
 		</header>
 	);

@@ -1,0 +1,112 @@
+{
+	"menu": {
+		"home": "Startseite",
+		"about": "Über uns",
+		"services": "Unser Angebot",
+		"mobile-services": "Angebot",
+		"portfolio": "Portfolio",
+		"contact": "Kontakt"
+	},
+	"home": {
+		"slogan": "Mit uns verbrennen Sie sich nicht!",
+		"company": "Firma DOPOSHK s.r.o."
+	},
+	"services": {
+		"title": "Was wir für Sie tun können",
+		"subtitle": "Unser Ziel ist es, unseren Kunden kontinuierlich einen hochwertigen und umfassenden Service zu bieten. Wir erstellen Ihnen ein kostenloses Angebot für einen konkreten Auftrag. ",
+		"anchor": "Schreiben Sie uns!",
+		"facades": {
+			"title": "Hinterlüftete Fassaden",
+			"text": "Wir konzentrieren uns hauptsächlich auf den Entwurf und die Ausführung von hinterlüfteten Fassaden. Diese Fassaden unterscheiden sich von den Kontaktfassaden durch einen vertikalen Luftspalt, durch den die Luft belüftet wird und somit der Abtransport von Feuchtigkeit aus der Dämmung gewährleistet ist. Der spezifische Typ der Wärmedämmplatten wird unter Berücksichtigung der Anforderungen an Steifigkeit und Rohdichte des Materials ausgewählt."
+		},
+		"acoustics": {
+			"title": "Gipskartonplatten, Akustik",
+			"text": "Wir sind ein zertifiziertes Unternehmen für die Lieferung und den Einbau von Gipsplatten, Gipskartonplatten und Akustiksystemen. Sie können für die Installation von Trennwänden, Wandverkleidungen, die Installation von abgehängten Decken und Dachbodenverkleidungen oder sogar für die Umsetzung von Trockenleichtböden verwendet werden."
+		},
+		"protection": {
+			"title": "Brandschutz von Gebäuden",
+			"text": "Wir bieten Ihnen Dienstleistungen auf dem Gebiet des passiven Brandschutzes von Gebäuden. Unser Unternehmen befasst sich mit der Planung, Lieferung und Montage von speziellen Brandschutzkonstruktionen. Auf der Grundlage der Projektdokumentation des Gebäudes, sind wir in der Lage, eine wirtschaftlich optimale Lösung für den Brandschutz Strukturen zu entwerfen."
+		},
+		"sandblasting": {
+			"title": "Sandstrahlen von Stahlkonstruktionen",
+			"text": "Wir konzentrieren uns jetzt auf das Sandstrahlen (Strahlen) von Stahlkonstruktionen und die anschließende Standard- oder Feuerfestbeschichtung. Sandstrahlen ist eine der effektivsten Methoden, um Schmutz von porösen Oberflächen zu entfernen, z. B. alte Farbe oder Korrosion durch Strahlen mit Strahlmitteln."
+		}
+	},
+	"parallax": {
+		"title": "Wir sind die einzigen...",
+		"subtitle": "in der Tschechischen Republik, die ein Zertifikat für die Anwendung von Rockfon® Mono Acoustic monolithischen Akustikdecken besitzen"
+	},
+	"about": {
+		"title": {
+			"small": "Lesen Sie",
+			"big": "einige Informationen über uns"
+		},
+		"first": {
+			"title": "Ihre Zufriedenheit ist unser Ziel!",
+			"text": "Unser Ziel ist es, unseren Kunden kontinuierlich hochwertige Dienstleistungen zu bieten, einschließlich eines umfassenden Service."
+		},
+		"second": {
+			"title": "Von der Projektdokumentation bis zur reibungslosen Genehmigung",
+			"text": "Auf der Grundlage der Projektdokumentation oder einer detaillierten Besichtigung des Gebäudes sind wir in der Lage, eine wirtschaftlich optimale Lösung für Brandschutzkonstruktionen vorzuschlagen. Wir erstellen ein kostenloses Angebot für einen konkreten Auftrag. Zu unseren Leistungen gehört auch die Beratung des Planers der Brandschutzlösung, einschließlich der Genehmigung des vorgeschlagenen Verfahrens mit der zuständigen Abteilung für baulichen Brandschutz der Feuerwehr. Wir garantieren eine problemlose Abnahme im Bereich unserer Lieferungen."
+		},
+		"third": {
+			"title": "Inspektion von Brandschutzeinrichtungen gemäß den geltenden Vorschriften",
+			"text": "Für bestehende, zugelassene und in Betrieb befindliche Gebäude führen wir die Inspektion der Brandschutzeinrichtungen gemäß dem Erlass Nr. 246 des Innenministeriums vom 21. Juni 2001 durch."
+		}
+	},
+	"countup": {
+		"first": {
+			"text": "Gründungsjahr"
+		},
+		"second": {
+			"text": "Projekte durchgeführt",
+			"prefix": "Über "
+		},
+		"third": {
+			"text": "Jahre Erfahrung"
+		}
+	},
+	"portfolio": {
+		"title": {
+			"small": "Werfen Sie einen Blick auf",
+			"big": "unsere realisierten Projekte"
+		},
+		"button": "Ich möchte ein ähnliches Projekt!",
+		"first": {
+			"title": "Harfa Park VI",
+			"text": "Harfa Park VI ist die letzte Etappe des bisher größten Wohnprojekts in Prag. Unser Unternehmen hat hier eine isolierte, hinterlüftete Fassade mit CEMBRIT-Platten von ca. 300 m2 hergestellt."
+		},
+		"second": {
+			"title": "SPŠŠ Havlíčkuv Brod",
+			"text": "Hallenerweiterung - wir haben KNAUF DIAMANT SDK-Systeme, AMF THERMATEX-Decken und AMF HERADESIGN-Akustikplatten hergestellt, außerdem ca. 300 m2 hinterlüftete Fassade DEKMETAL."
+		},
+		"third": {
+			"title": "Stueken Hradec Králové",
+			"text": "Neue Halle der STUEKEN s.r.o. Unser Unternehmen hat 1250 m2 Kassettendecken, 300 m2 Trennwände und etwa 150 m2 vorbereitete Wände hergestellt."
+		},
+		"fourth": {
+			"title": "Základní škola Herálec",
+			"text": "In der Turnhalle der Schule haben wir ca. 130 m2 akustische, stoßfeste und absorbierende THERMATEX HERADESIGN Platten verlegt."
+		}
+	},
+	"contact": {
+		"title": {
+			"small": "Haben Sie noch Fragen?",
+			"big": "Kontaktieren Sie uns!"
+		},
+		"martin": {
+			"title": "Geschäftsführender Direktor"
+		},
+		"iva": {
+			"title": "Geschäftsführender Direktor, Wirtschaft"
+		},
+		"panel": {
+			"contact": "Kontaktangaben",
+			"invoicing": "Informationen zur Rechnungsstellung",
+			"button": "Finden Sie uns!"
+		}
+	},
+	"footer": {
+		"created_by": "Erstellt von: "
+	}
+}

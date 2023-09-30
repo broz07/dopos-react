@@ -1,6 +1,8 @@
 import './globals.css';
 import { Barlow_Condensed } from 'next/font/google';
 import { Metadata } from 'next';
+import { I18nextProvider } from 'react-i18next';
+import i18n from '@dopos/utils/i18n';
 
 const barlow = Barlow_Condensed({
 	subsets: ['latin'],
@@ -10,7 +12,8 @@ const barlow = Barlow_Condensed({
 export const metadata: Metadata = {
 	title: 'DOPOS HK s.r.o.',
 	applicationName: 'DOPOS HK s.r.o. - Návrh a realizace provětrávaných fasád',
-	description: 'Optimalizujte svoji budovu s moderními provětranými fasádami. Nabízíme profesionální návrh a kvalitní realizaci s důrazem na energetickou účinnost. Získejte stylovou fasádu, která vám pomůže snížit náklady na vytápění a zvýší komfort ve vaší budově. Kontaktujte nás pro nejlepší řešení!',
+	description:
+		'Optimalizujte svoji budovu s moderními provětranými fasádami. Nabízíme profesionální návrh a kvalitní realizaci s důrazem na energetickou účinnost. Získejte stylovou fasádu, která vám pomůže snížit náklady na vytápění a zvýší komfort ve vaší budově. Kontaktujte nás pro nejlepší řešení!',
 	authors: [
 		{ name: 'Daniel Brož', url: 'https://www.linkedin.com/in/broz-daniel' },
 	],

@@ -7,6 +7,7 @@ import { useState } from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import SwipeableViews from 'react-swipeable-views';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
 	images: string | string[];
@@ -16,6 +17,7 @@ interface Props {
 
 const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 	const [index, setIndex] = useState(0);
+	const { t } = useTranslation();
 
 	if (typeof images === 'string') images = [images];
 
@@ -108,6 +110,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 					// className="mt-6 normal-case bg-dopos-blue hover:bg-dopos-blue text-white font-semibold py-2 px-4 rounded text-base"
 					sx={{
 						marginTop: '1.5rem',
+						marginBottom: '1rem',
 						textTransform: 'none',
 						backgroundColor: 'rgb(0,158,224)',
 						color: 'white',
@@ -124,7 +127,7 @@ const PortfolioItem: React.FC<Props> = ({ images, title, description }) => {
 					href="#kontakt"
 					endIcon={<EastIcon />}
 				>
-					Chci podobný projekt!
+					{t('portfolio.button')}
 				</Button>
 			</div>
 		</div>

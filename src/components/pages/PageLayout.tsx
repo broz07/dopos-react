@@ -15,6 +15,8 @@ import { Parallax } from 'react-parallax';
 import ParallaxSection from '../sections/ParallaxSection';
 import CountupSection from '../sections/CountupSection';
 import PartnerSection from '../sections/PartnerSection';
+import { I18nextProvider } from 'react-i18next';
+import i18n from '@dopos/utils/i18n';
 
 const PageLayout: React.FC = () => {
 	const { setCurrentPage, setAnimationPlayed, setAnimationTriggered } =
@@ -64,7 +66,7 @@ const PageLayout: React.FC = () => {
 	}, [setAnimationPlayed, setAnimationTriggered, setCurrentPage]);
 
 	return (
-		<>
+		<I18nextProvider i18n={i18n}>
 			<Header />
 			<main className="sticky top-0 left-0 right-0 h-auto flex-col">
 				<HomeSection />
@@ -78,7 +80,7 @@ const PageLayout: React.FC = () => {
 			</main>
 			<Footer />
 			<MobileMenu />
-		</>
+		</I18nextProvider>
 	);
 };
 

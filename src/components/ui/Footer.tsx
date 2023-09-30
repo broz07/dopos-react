@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import ContactCol from './ContactCol';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
 	const year = new Date().getFullYear();
+	const { t } = useTranslation();
 
 	return (
 		<footer className={`desktop:h-auto py-4 bg-dopos-black text-white`}>
@@ -11,7 +12,7 @@ const Footer = () => {
 			>
 				<span className={`mr-2`}>{`© ${year} DOPOS HK s.r.o.`}</span>
 				<span className={`ml-2`}>
-					{`Vytvořil: `}
+					{t('footer.created_by')}
 					<Link
 						href="https://www.linkedin.com/in/broz-daniel"
 						target="_blank"
