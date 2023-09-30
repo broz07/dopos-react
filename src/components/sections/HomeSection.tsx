@@ -1,13 +1,11 @@
-// "use client"
-import { Button } from '@mui/material';
-import { changeLanguage } from 'i18next';
 import { useTranslation } from 'react-i18next';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import { changeLanguage } from 'i18next';
 
 const HomeSection = () => {
 	const { t } = useTranslation();
 	return (
 		<div
-			// className="h-[38rem] scrollama-step select-none bg-white"
 			className="relative h-screen w-screen scrollama-step bg-white"
 			data-step="home"
 		>
@@ -27,31 +25,23 @@ const HomeSection = () => {
 				</h1>
 				<p className="text-3xl font-bold text-center text-dopos-blue">
 					{t('home.company')}
-					<Button
-						variant="contained"
-						onClick={() => {
-							changeLanguage('cs');
-						}}
-					>
-						cs
-					</Button>
-					<Button
-						variant="contained"
-						onClick={() => {
-							changeLanguage('en');
-						}}
-					>
-						en
-					</Button>
-					<Button
-						variant="contained"
-						onClick={() => {
-							changeLanguage('de');
-						}}
-					>
-						de
-					</Button>
 				</p>
+				<div
+					className='absolute bottom-20 flex flex-row justify-center items-center gap-x-6 text-3xl'
+				>
+					<span 
+						className="fi fi-cz cursor-pointer" 
+						onClick={()=>{changeLanguage('cz')}}
+					/>
+					<span
+						className="fi fi-gb cursor-pointer"
+						onClick={()=>{changeLanguage('en')}}
+					/>
+					<span 
+						className="fi fi-de cursor-pointer" 
+						onClick={()=>{changeLanguage('de')}}
+					/>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 'use client';
+
 import Header from '@dopos/components/ui/Header';
-// import ImageCarousel from '@dopos/components/ImageCarousel';
 import { useEffect } from 'react';
 import AboutSection from '@dopos/components/sections/AboutSection';
 import ServiceSection from '@dopos/components/sections/ServiceSection';
@@ -11,7 +11,6 @@ import Footer from '../ui/Footer';
 import { usePageContext } from '@dopos/contexts/PageContext';
 import MobileMenu from '../ui/MobileMenu';
 import HomeSection from '../sections/HomeSection';
-import { Parallax } from 'react-parallax';
 import ParallaxSection from '../sections/ParallaxSection';
 import CountupSection from '../sections/CountupSection';
 import PartnerSection from '../sections/PartnerSection';
