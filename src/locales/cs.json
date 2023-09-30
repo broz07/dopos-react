@@ -1,0 +1,112 @@
+{
+	"menu": {
+		"home": "Domů",
+		"about": "O nás",
+		"services": "Naše služby",
+		"mobile-services": "Služby",
+		"portfolio": "Portfolio",
+		"contact": "Kontakt"
+	},
+	"home": {
+		"slogan": "S námi se nespálíte!",
+		"company": "Společnost DOPOSHK s.r.o."
+	},
+	"services": {
+		"title": "Co pro vás můžeme udělat",
+		"subtitle": "Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům, včetně komplexního servisu. Na konkrétní zadání zpracujeme zdarma cenovou nabídku. ",
+		"anchor": "Napište nám!",
+		"facades": {
+			"title": "Provětrávané fasády",
+			"text": "Zaměřujeme se především na návrh a realizaci provětrávaných fasád. Tyto fasády se od kontaktních fasád liší svislou vzduchovou mezeru, kterou je odvětráván vzduch a tím je zajištěn odvod vlhkosti z izolace. Konkrétní typ tepelněizolačních desek se volí s ohledem na požadavky na tuhost a objemovou hmotnost materiálu."
+		},
+		"acoustics": {
+			"title": "Sádrokartony, akustika",
+			"text": "Jsme certifikovanou firmou pro dodávku a montáž sádrokartonových, sádrovláknitých a akustických systémů. Využít je lze na montáž příček, obkladů stěn, montáž podhledů a opláštění podkroví nebo i k realizaci suchých lehkých podlah."
+		},
+		"protection": {
+			"title": "Požární ochrana staveb",
+			"text": "Nabízíme vám služby v oblasti pasivní požární ochrany staveb. Naše firma se zabývá návrhem, dodávkou a montáží speciálních protipožárních konstrukcí. Na základě projektové dokumentace stavby jsme schopni navrhnout ekonomicky optimální řešení protipožárních konstrukcí."
+		},
+		"sandblasting": {
+			"title": "Pískování ocelových konstrukcí",
+			"text": "Nově se zaměřujeme na pískování (tryskání) ocelových konstrukcí a následnému standardnímu, či protipožárnímu nátěru. Pískování je jednou z nejúčinějších metod odstraňování nečistot z porvrchů, např. starých nátěrů, či koroze pomocí tryskání tzv. abraziva."
+		}
+	},
+	"parallax": {
+		"title": "Jsme jediní...",
+		"subtitle": "kdo v ČR vlastní certifikát pro aplikaci monolitických akustických podhledů Rockfon® Mono Acoustic"
+	},
+	"about": {
+		"title": {
+			"small": "Přečtěte si",
+			"big": "Pár informací o nás"
+		},
+		"first": {
+			"title": "Vaše spokojenost je naším cílem!",
+			"text": "Našim cílem je kontinuální poskytování kvalitních služeb zákazníkům, včetně komplexního servisu."
+		},
+		"second": {
+			"title": "Od projektové dokumentace po bezproblémovou kolaudaci",
+			"text": "Na základě projektové dokumentace nebo podrobné prohlídky stavby jsme schopni navrhnout ekonomicky optimální řešení protipožárních konstrukcí. Na konkrétní zadání zpracujeme zdarma cenovou nabídku. Součástí našich služeb je také konzultace s projektantem požárně bezpečnostního řešení včetně odsouhlasení navrženého postupu s dotyčnou stavební prevencí Hasičského záchranného sboru. Garantujeme bezproblémovou kolaudaci v oblasti našich dodávek."
+		},
+		"third": {
+			"title": "Kontrola požárně bezpečnostních zařízení podle platných předpisů",
+			"text": "Pro stávající zkolaudované objekty v provozu zajišťujeme kontrolu požárně bezpečnostních zařízení podle vyhlášky Ministerstva vnitra č. 246 z 21.6.2001."
+		}
+	},
+	"countup": {
+		"first": {
+			"text": "rok založení"
+		},
+		"second": {
+			"text": "realizovaných projektů",
+			"prefix": "Přes "
+		},
+		"third": {
+			"text": "let zkušeností"
+		}
+	},
+	"portfolio": {
+		"title": {
+			"small": "Prohlédněte si naše",
+			"big": "Realizované projekty"
+		},
+		"button": "Chci podobný projekt!",
+		"first": {
+			"title": "Harfa Park VI",
+			"text": "Harfa Park VI je poslední etapou dosud největšího bytového projektu v Praze. Naše firma zde provedla zateplenou provětrávanou fasádu deskami CEMBRIT, cca 300 m2."
+		},
+		"second": {
+			"title": "SPŠŠ Havlíčkuv Brod",
+			"text": "Přístavba haly - provedli jsme SDK systémy KNAUF DIAMANT, podhledy AMF THERMATEX a aku. obklady AMF HERADESIGN, také cca 300 m2 provětrávané fasády DEKMETAL."
+		},
+		"third": {
+			"title": "Stueken Hradec Králové",
+			"text": "Nová hala společnosti STUEKEN s.r.o. Naše firma zde provedla 1250 m2 kazetových podhledů, 300 m2 příček a cca 150 m2 předsazených stěn."
+		},
+		"fourth": {
+			"title": "Základní škola Herálec",
+			"text": "Ve školní tělocvičně jsme nainstalovali cca 130 m2 akustických, nárazu odolných, pohltivých desek THERMATEX HERADESIGN."
+		}
+	},
+	"contact": {
+		"title": {
+			"small": "Chcete se na něco zeptat?",
+			"big": "Kontaktujte nás!"
+		},
+		"martin": {
+			"title": "Jednatel společnosti"
+		},
+		"iva": {
+			"title": "Jednatelka, ekonomika"
+		},
+		"panel": {
+			"contact": "Kontaktní údaje",
+			"invoicing": "Fakturační údaje",
+			"button": "Najděte nás!"
+		}
+	},
+	"footer": {
+		"created_by": "Vytvořil: "
+	}
+}

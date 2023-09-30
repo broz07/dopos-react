@@ -1,7 +1,9 @@
 import { Parallax } from 'react-parallax';
 import Count from '../ui/Count';
+import { useTranslation } from 'react-i18next';
 
 const CountupSection = () => {
+	const { t } = useTranslation();
 	const countUpClass =
 		'flex flex-col justify-center items-center bg-white bg-opacity-80 rounded-xl shadow-xl p-8 w-96';
 
@@ -18,19 +20,23 @@ const CountupSection = () => {
 				contentClassName="flex desktop:flex-row laptop:flex-row flex-col w-full h-full justify-center items-center gap-8 text-dopos-black p-8"
 			>
 				<Count
-					text="rok založení"
+					text={t('countup.first.text')}
 					end={2007}
 					separator=""
 					className={countUpClass}
 				/>
 				<Count
-					text="realizovaných projektů"
+					text={t('countup.second.text')}
 					end={100}
 					separator=","
-					prefix="Přes "
+					prefix={t('countup.second.prefix')}
 					className={countUpClass}
 				/>
-				<Count text="let zkušeností" end={30} className={countUpClass} />
+				<Count
+					text={t('countup.third.text')}
+					end={30}
+					className={countUpClass}
+				/>
 			</Parallax>
 		</div>
 	);

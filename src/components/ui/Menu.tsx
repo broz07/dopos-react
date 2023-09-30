@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
+
 interface MenuProps {
 	currentPage: string;
 	setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
@@ -12,6 +14,8 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 		setCurrentPage(page);
 	};
 
+	const { t } = useTranslation();
+
 	return (
 		<nav className={`desktop:block laptop:block hidden h-full`}>
 			<ul className="desktop:flex laptop:flex h-full hidden uppercase tracking-wide">
@@ -21,10 +25,10 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'home' ? 'current-page' : ''
 					}`}
-					aria-label="Domů"
+					aria-label={t('menu.home')}
 					aria-current={currentPage === 'home' ? 'page' : undefined}
 				>
-					Domů
+					{t('menu.home')}
 				</a>
 				<a
 					href="#sluzby"
@@ -32,10 +36,10 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'sluzby' ? 'current-page' : ''
 					}`}
-					aria-label="Naše služby"
+					aria-label={t('menu.services')}
 					aria-current={currentPage === 'sluzby' ? 'page' : undefined}
 				>
-					Naše služby
+					{t('menu.services')}
 				</a>
 				<a
 					href="#o-nas"
@@ -43,10 +47,10 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'o-nas' ? 'current-page' : ''
 					}`}
-					aria-label="O nás"
+					aria-label={t('menu.about')}
 					aria-current={currentPage === 'o-nas' ? 'page' : undefined}
 				>
-					O nás
+					{t('menu.about')}
 				</a>
 				<a
 					href="#portfolio"
@@ -54,10 +58,10 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'portfolio' ? 'current-page' : ''
 					}`}
-					aria-label="Portfolio"
+					aria-label={t('menu.portfolio')}
 					aria-current={currentPage === 'portfolio' ? 'page' : undefined}
 				>
-					Portfolio
+					{t('menu.portfolio')}
 				</a>
 				<a
 					href="#kontakt"
@@ -65,10 +69,10 @@ const Menu: React.FC<MenuProps> = ({ currentPage, setCurrentPage }) => {
 					className={`menu-button bounce-to-bottom ${
 						currentPage === 'kontakt' ? 'current-page' : ''
 					}`}
-					aria-label="Kontakt"
+					aria-label={t('menu.contact')}
 					aria-current={currentPage === 'kontakt' ? 'page' : undefined}
 				>
-					Kontakt
+					{t('menu.contact')}
 				</a>
 			</ul>
 		</nav>

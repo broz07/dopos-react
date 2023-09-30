@@ -1,0 +1,112 @@
+{
+	"menu": {
+		"home": "Home",
+		"about": "About us",
+		"services": "Our services",
+		"mobile-services": "Services",
+		"portfolio": "Portfolio",
+		"contact": "Contact"
+	},
+	"home": {
+		"slogan": "With us you won't get burned!",
+		"company": "Company DOPOSHK s.r.o."
+	},
+	"services": {
+		"title": "What we can do for you",
+		"subtitle": "Our goal is to continuously provide quality services to our customers, including comprehensive service. We will prepare a free quotation for a specific assignment. ",
+		"anchor": "Contact us!",
+		"facades": {
+			"title": "Ventilated facades",
+			"text": "We focus mainly on the design and implementation of ventilated facades. These facades differ from contact facades by a vertical air gap through which the air is ventilated, thus ensuring the removal of moisture from the insulation. The specific type of thermal insulation boards is selected with regard to the requirements for stiffness and bulk density of the material."
+		},
+		"acoustics": {
+			"title": "Plasterboards, acoustics",
+			"text": "We are a certified company for the supply and installation of plasterboard, plasterboard and acoustic systems. They can be used for the installation of partitions, wall cladding, installation of suspended ceilings and attic cladding or even for the implementation of dry lightweight floors."
+		},
+		"protection": {
+			"title": "Fire protection of buildings",
+			"text": "We offer you services in the field of passive fire protection of buildings. Our company deals with the design, supply and installation of special fire protection structures. Based on the project documentation of the building, we are able to design an economically optimal solution for fire protection structures."
+		},
+		"sandblasting": {
+			"title": "Sandblasting of steel structures",
+			"text": "We are now focusing on sandblasting (blasting) of steel structures and subsequent standard or fireproof coating. Sandblasting is one of the most effective methods of removing dirt from porous surfaces, e.g. old paint or corrosion by blasting with abrasives."
+		}
+	},
+	"parallax": {
+		"title": "We are the only one...",
+		"subtitle": "who owns a certificate for the application of Rockfon® Mono Acoustic monolithic acoustic ceilings in the Czech Republic"
+	},
+	"about": {
+		"title": {
+			"small": "Read some",
+			"big": "Information about us"
+		},
+		"first": {
+			"title": "Your satisfaction is our goal!",
+			"text": "Our goal is the continuous provision of quality customer service, including comprehensive service."
+		},
+		"second": {
+			"title": "From project documentation to trouble-free approval",
+			"text": "On the basis of the project documentation or a detailed inspection of the building, we are able to propose an economically optimal solution for fire protection structures. We will prepare a free quotation for a specific assignment. Our services also include consultation with the designer of the fire safety solution, including approval of the proposed procedure with the relevant building prevention department of the Fire Brigade. We guarantee a hassle-free approval in the area of our deliveries."
+		},
+		"third": {
+			"title": "Inspection of fire safety equipment according to applicable regulations",
+			"text": "For existing approved buildings in operation, we provide inspection of fire safety equipment in accordance with Decree of the Ministry of the Interior No. 246 of 21.6.2001."
+		}
+	},
+	"countup": {
+		"first": {
+			"text": "year of foundation"
+		},
+		"second": {
+			"text": "completed projects",
+			"prefix": "Over "
+		},
+		"third": {
+			"text": "years of experience"
+		}
+	},
+	"portfolio": {
+		"title": {
+			"small": "Take a look at",
+			"big": "our completed projects"
+		},
+		"button": "I want a similar project!",
+		"first": {
+			"title": "Harfa Park VI",
+			"text": "Harfa Park VI is the last stage of the largest residential project in Prague to date. Our company has made here an insulated ventilated facade with CEMBRIT boards, about 300 m2."
+		},
+		"second": {
+			"title": "SPŠŠ Havlíčkuv Brod",
+			"text": "Hall extension - we made KNAUF DIAMANT SDK systems, AMF THERMATEX suspended ceilings and AMF HERADESIGN acoustic tiles, also about 300 m2 of DEKMETAL ventilated facade."
+		},
+		"third": {
+			"title": "Stueken Hradec Králové",
+			"text": "New hall of STUEKEN s.r.o. Our company made 1250 m2 of coffered ceilings, 300 m2 of partitions and about 150 m2 of pre-set walls."
+		},
+		"fourth": {
+			"title": "Základní škola Herálec",
+			"text": "We installed approximately 130 m2 of acoustic, impact-resistant, absorbent THERMATEX HERADESIGN boards in the school gym."
+		}
+	},
+	"contact": {
+		"title": {
+			"small": "Do you have a question?",
+			"big": "Contact us!"
+		},
+		"martin": {
+			"title": "Managing Director"
+		},
+		"iva": {
+			"title": "Managing Director, Economics"
+		},
+		"panel": {
+			"contact": "Contact details",
+			"invoicing": "Billing information",
+			"button": "Find us!"
+		}
+	},
+	"footer": {
+		"created_by": "Created by: "
+	}
+}

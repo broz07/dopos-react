@@ -1,6 +1,6 @@
 'use client';
+
 import Header from '@dopos/components/ui/Header';
-// import ImageCarousel from '@dopos/components/ImageCarousel';
 import { useEffect } from 'react';
 import AboutSection from '@dopos/components/sections/AboutSection';
 import ServiceSection from '@dopos/components/sections/ServiceSection';
@@ -11,10 +11,11 @@ import Footer from '../ui/Footer';
 import { usePageContext } from '@dopos/contexts/PageContext';
 import MobileMenu from '../ui/MobileMenu';
 import HomeSection from '../sections/HomeSection';
-import { Parallax } from 'react-parallax';
 import ParallaxSection from '../sections/ParallaxSection';
 import CountupSection from '../sections/CountupSection';
 import PartnerSection from '../sections/PartnerSection';
+import { I18nextProvider } from 'react-i18next';
+import i18n from '@dopos/utils/i18n';
 
 const PageLayout: React.FC = () => {
 	const { setCurrentPage, setAnimationPlayed, setAnimationTriggered } =
@@ -64,7 +65,7 @@ const PageLayout: React.FC = () => {
 	}, [setAnimationPlayed, setAnimationTriggered, setCurrentPage]);
 
 	return (
-		<>
+		<I18nextProvider i18n={i18n}>
 			<Header />
 			<main className="sticky top-0 left-0 right-0 h-auto flex-col">
 				<HomeSection />
@@ -78,7 +79,7 @@ const PageLayout: React.FC = () => {
 			</main>
 			<Footer />
 			<MobileMenu />
-		</>
+		</I18nextProvider>
 	);
 };
 
